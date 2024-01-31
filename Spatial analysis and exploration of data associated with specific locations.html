@@ -1,0 +1,3785 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_132a66de0580216ed722e29b6a4d6610 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+             <h3 align="center" style="font-size:20px"><b>Spatial analysis and exploration of data associated with specific Destinations - Dharani</b></h3>
+             
+    
+            <div class="folium-map" id="map_132a66de0580216ed722e29b6a4d6610" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_132a66de0580216ed722e29b6a4d6610 = L.map(
+                "map_132a66de0580216ed722e29b6a4d6610",
+                {
+                    center: [21.127314277372264, 38.15497394890511],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9fa12aaabb4e255c7ffad18f2e1c29ec = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9fa12aaabb4e255c7ffad18f2e1c29ec.addTo(map_132a66de0580216ed722e29b6a4d6610);
+        
+    
+            var marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_5a667c4de7086e5d39773b00df9a72a4 = L.marker(
+                [51.509865, -0.118092],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_35f377c4c07380a80bfd59d1eeb4ebb9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5a667c4de7086e5d39773b00df9a72a4.setIcon(icon_35f377c4c07380a80bfd59d1eeb4ebb9);
+        
+    
+        var popup_91d2aa86029400077bdd1bc7e5b0ffb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4bee755815d4db58beee5e0c71a876d = $(`<div id="html_b4bee755815d4db58beee5e0c71a876d" style="width: 100.0%; height: 100.0%;">Destination: London&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 13.1395857988166°C&lt;br&gt;Humidity: 79.20118343195266%</div>`)[0];
+                popup_91d2aa86029400077bdd1bc7e5b0ffb2.setContent(html_b4bee755815d4db58beee5e0c71a876d);
+            
+        
+
+        marker_5a667c4de7086e5d39773b00df9a72a4.bindPopup(popup_91d2aa86029400077bdd1bc7e5b0ffb2)
+        ;
+
+        
+    
+    
+            var marker_cc926b983d0fa4b6fc491ab629daeab9 = L.marker(
+                [51.509865, -0.118092],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_6e3af0f6c1741df5cd61063b47cf7577 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cc926b983d0fa4b6fc491ab629daeab9.setIcon(icon_6e3af0f6c1741df5cd61063b47cf7577);
+        
+    
+        var popup_aadc81d42adca4e2cbdb2d4c1f820921 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db11081efe98abb603bb6c9f7d52ebc7 = $(`<div id="html_db11081efe98abb603bb6c9f7d52ebc7" style="width: 100.0%; height: 100.0%;">Destination: London&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 17.415207100591747°C&lt;br&gt;Humidity: 66.8224852071006%</div>`)[0];
+                popup_aadc81d42adca4e2cbdb2d4c1f820921.setContent(html_db11081efe98abb603bb6c9f7d52ebc7);
+            
+        
+
+        marker_cc926b983d0fa4b6fc491ab629daeab9.bindPopup(popup_aadc81d42adca4e2cbdb2d4c1f820921)
+        ;
+
+        
+    
+    
+            var marker_24c9cfa37f3584a9bc3c7dd4337337d1 = L.marker(
+                [51.509865, -0.118092],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_a6d643ad37af6d113171eda0917ab116 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_24c9cfa37f3584a9bc3c7dd4337337d1.setIcon(icon_a6d643ad37af6d113171eda0917ab116);
+        
+    
+        var popup_d5489d6d66b83f8926c058e4c78715e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ff1c5e4c1116758046e791303c883f3 = $(`<div id="html_0ff1c5e4c1116758046e791303c883f3" style="width: 100.0%; height: 100.0%;">Destination: London&lt;br&gt;Month: 2023-03&lt;br&gt;Temperature: 4.622544378698248°C&lt;br&gt;Humidity: 79.10650887573965%</div>`)[0];
+                popup_d5489d6d66b83f8926c058e4c78715e5.setContent(html_0ff1c5e4c1116758046e791303c883f3);
+            
+        
+
+        marker_24c9cfa37f3584a9bc3c7dd4337337d1.bindPopup(popup_d5489d6d66b83f8926c058e4c78715e5)
+        ;
+
+        
+    
+    
+            var marker_15689a6d7121d3c59a1307f5759b2328 = L.marker(
+                [51.509865, -0.118092],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_94578a6b3914b5a88ccc416b3fc58037 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_15689a6d7121d3c59a1307f5759b2328.setIcon(icon_94578a6b3914b5a88ccc416b3fc58037);
+        
+    
+        var popup_7b361028254f449ea3b6345d493de2d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1e12f6dc0b3053bcbebf613dddd730c = $(`<div id="html_b1e12f6dc0b3053bcbebf613dddd730c" style="width: 100.0%; height: 100.0%;">Destination: London&lt;br&gt;Month: 2023-03&lt;br&gt;Temperature: 4.622544378698248°C&lt;br&gt;Humidity: 79.10650887573965%</div>`)[0];
+                popup_7b361028254f449ea3b6345d493de2d4.setContent(html_b1e12f6dc0b3053bcbebf613dddd730c);
+            
+        
+
+        marker_15689a6d7121d3c59a1307f5759b2328.bindPopup(popup_7b361028254f449ea3b6345d493de2d4)
+        ;
+
+        
+    
+    
+            var marker_0e6980aa8a7d622e23cc150afb89b31c = L.marker(
+                [51.509865, -0.118092],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_14556e7590f81c3c949fad6e0eb20150 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0e6980aa8a7d622e23cc150afb89b31c.setIcon(icon_14556e7590f81c3c949fad6e0eb20150);
+        
+    
+        var popup_82a5687c5e27d1cec45d6f825b34ae55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12c805fb72a374640fdd726360f27e60 = $(`<div id="html_12c805fb72a374640fdd726360f27e60" style="width: 100.0%; height: 100.0%;">Destination: London&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 9.60260355029588°C&lt;br&gt;Humidity: 86.70414201183432%</div>`)[0];
+                popup_82a5687c5e27d1cec45d6f825b34ae55.setContent(html_12c805fb72a374640fdd726360f27e60);
+            
+        
+
+        marker_0e6980aa8a7d622e23cc150afb89b31c.bindPopup(popup_82a5687c5e27d1cec45d6f825b34ae55)
+        ;
+
+        
+    
+    
+            var marker_0f6d91b5093c0db7ddb96bde64a44714 = L.marker(
+                [51.509865, -0.118092],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_3c526eb9be77f5bcd048368945938fe9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f6d91b5093c0db7ddb96bde64a44714.setIcon(icon_3c526eb9be77f5bcd048368945938fe9);
+        
+    
+        var popup_b9f0e57da472e56ec9489a5c6785dbae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_306aca81a98c65a169f50eca3918939e = $(`<div id="html_306aca81a98c65a169f50eca3918939e" style="width: 100.0%; height: 100.0%;">Destination: London&lt;br&gt;Month: 2023-02&lt;br&gt;Temperature: 6.68366863905328°C&lt;br&gt;Humidity: 82.02958579881657%</div>`)[0];
+                popup_b9f0e57da472e56ec9489a5c6785dbae.setContent(html_306aca81a98c65a169f50eca3918939e);
+            
+        
+
+        marker_0f6d91b5093c0db7ddb96bde64a44714.bindPopup(popup_b9f0e57da472e56ec9489a5c6785dbae)
+        ;
+
+        
+    
+    
+            var marker_d19d4b57d9ea1d1b6dc10438e3d8397c = L.marker(
+                [51.509865, -0.118092],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_cb3ba7326f3825decbda7a462cee1289 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d19d4b57d9ea1d1b6dc10438e3d8397c.setIcon(icon_cb3ba7326f3825decbda7a462cee1289);
+        
+    
+        var popup_a6449e4826ce8a45029b3b795854148f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a10bab12d58a0472c5c647bf0939866b = $(`<div id="html_a10bab12d58a0472c5c647bf0939866b" style="width: 100.0%; height: 100.0%;">Destination: London&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 14.189763313609488°C&lt;br&gt;Humidity: 69.6094674556213%</div>`)[0];
+                popup_a6449e4826ce8a45029b3b795854148f.setContent(html_a10bab12d58a0472c5c647bf0939866b);
+            
+        
+
+        marker_d19d4b57d9ea1d1b6dc10438e3d8397c.bindPopup(popup_a6449e4826ce8a45029b3b795854148f)
+        ;
+
+        
+    
+    
+            var marker_d0b1c4f3d43fef26c002628df376bacc = L.marker(
+                [7.8804, 98.3923],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_a9d00798a5c926a6395517b3feb04295 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d0b1c4f3d43fef26c002628df376bacc.setIcon(icon_a9d00798a5c926a6395517b3feb04295);
+        
+    
+        var popup_eca86795255e9d4c6f3d3054c074872f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcc83935e4aefd4375566aa1207ee846 = $(`<div id="html_fcc83935e4aefd4375566aa1207ee846" style="width: 100.0%; height: 100.0%;">Destination: Phuket&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 30.00775147928992°C&lt;br&gt;Humidity: 95.2189349112426%</div>`)[0];
+                popup_eca86795255e9d4c6f3d3054c074872f.setContent(html_fcc83935e4aefd4375566aa1207ee846);
+            
+        
+
+        marker_d0b1c4f3d43fef26c002628df376bacc.bindPopup(popup_eca86795255e9d4c6f3d3054c074872f)
+        ;
+
+        
+    
+    
+            var marker_11cb350d74665dc942311a3e5f53e6f3 = L.marker(
+                [7.8804, 98.3923],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_63516c208065dcda9f02c1516bcfd498 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_11cb350d74665dc942311a3e5f53e6f3.setIcon(icon_63516c208065dcda9f02c1516bcfd498);
+        
+    
+        var popup_2cfd461128ca48cfc8a1ec33f377db34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1cf885d3765712fbab6a6b5738a3e86 = $(`<div id="html_c1cf885d3765712fbab6a6b5738a3e86" style="width: 100.0%; height: 100.0%;">Destination: Phuket&lt;br&gt;Month: 2023-01&lt;br&gt;Temperature: 27.97704142011832°C&lt;br&gt;Humidity: 79.94082840236686%</div>`)[0];
+                popup_2cfd461128ca48cfc8a1ec33f377db34.setContent(html_c1cf885d3765712fbab6a6b5738a3e86);
+            
+        
+
+        marker_11cb350d74665dc942311a3e5f53e6f3.bindPopup(popup_2cfd461128ca48cfc8a1ec33f377db34)
+        ;
+
+        
+    
+    
+            var marker_9d7dd84eeced1e87f0fc1f82ef737702 = L.marker(
+                [7.8804, 98.3923],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_2937907403a0d9ec4db8b1efe3dc00a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d7dd84eeced1e87f0fc1f82ef737702.setIcon(icon_2937907403a0d9ec4db8b1efe3dc00a8);
+        
+    
+        var popup_d711be60feb3c3db1578143c1d8de1b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_696137bf422810b1ec3247ef105ce6d1 = $(`<div id="html_696137bf422810b1ec3247ef105ce6d1" style="width: 100.0%; height: 100.0%;">Destination: Phuket&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 28.576863905325474°C&lt;br&gt;Humidity: 77.68047337278107%</div>`)[0];
+                popup_d711be60feb3c3db1578143c1d8de1b5.setContent(html_696137bf422810b1ec3247ef105ce6d1);
+            
+        
+
+        marker_9d7dd84eeced1e87f0fc1f82ef737702.bindPopup(popup_d711be60feb3c3db1578143c1d8de1b5)
+        ;
+
+        
+    
+    
+            var marker_cd34d5cd0e074eefdde7683762832ee7 = L.marker(
+                [-8.409518, 115.188919],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_b44ec0b9c7ba203ec88f1e636e42e4bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cd34d5cd0e074eefdde7683762832ee7.setIcon(icon_b44ec0b9c7ba203ec88f1e636e42e4bb);
+        
+    
+        var popup_6c2c6f06e2b78205e82a3e8d804b4e9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_018879b4f687d610bdcff2b9581f007c = $(`<div id="html_018879b4f687d610bdcff2b9581f007c" style="width: 100.0%; height: 100.0%;">Destination: Bali&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 24.685147928994137°C&lt;br&gt;Humidity: 93.0828402366864%</div>`)[0];
+                popup_6c2c6f06e2b78205e82a3e8d804b4e9f.setContent(html_018879b4f687d610bdcff2b9581f007c);
+            
+        
+
+        marker_cd34d5cd0e074eefdde7683762832ee7.bindPopup(popup_6c2c6f06e2b78205e82a3e8d804b4e9f)
+        ;
+
+        
+    
+    
+            var marker_55521e7be10f8717f17efa9291bc537b = L.marker(
+                [-8.409518, 115.188919],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_0d8fe770d60d62159103f2f473f07900 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55521e7be10f8717f17efa9291bc537b.setIcon(icon_0d8fe770d60d62159103f2f473f07900);
+        
+    
+        var popup_a04a1eeff85970a430daa8662529ecac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa9ab30a6ba0395ee7f9ae6a827d12c2 = $(`<div id="html_fa9ab30a6ba0395ee7f9ae6a827d12c2" style="width: 100.0%; height: 100.0%;">Destination: Bali&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 24.685147928994137°C&lt;br&gt;Humidity: 93.0828402366864%</div>`)[0];
+                popup_a04a1eeff85970a430daa8662529ecac.setContent(html_fa9ab30a6ba0395ee7f9ae6a827d12c2);
+            
+        
+
+        marker_55521e7be10f8717f17efa9291bc537b.bindPopup(popup_a04a1eeff85970a430daa8662529ecac)
+        ;
+
+        
+    
+    
+            var marker_638c970c89a9f50e259650a57d94ec23 = L.marker(
+                [-8.409518, 115.188919],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_4b15b1dc867128e1c4fe75a0d702212d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_638c970c89a9f50e259650a57d94ec23.setIcon(icon_4b15b1dc867128e1c4fe75a0d702212d);
+        
+    
+        var popup_4a2c63fb1a6a9f78495ab34afecd9e89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efc04f04b0688740a4a8ff7ebc0b030c = $(`<div id="html_efc04f04b0688740a4a8ff7ebc0b030c" style="width: 100.0%; height: 100.0%;">Destination: Bali&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 24.685147928994137°C&lt;br&gt;Humidity: 93.0828402366864%</div>`)[0];
+                popup_4a2c63fb1a6a9f78495ab34afecd9e89.setContent(html_efc04f04b0688740a4a8ff7ebc0b030c);
+            
+        
+
+        marker_638c970c89a9f50e259650a57d94ec23.bindPopup(popup_4a2c63fb1a6a9f78495ab34afecd9e89)
+        ;
+
+        
+    
+    
+            var marker_471035c863266788cb90ac508748a59f = L.marker(
+                [-8.409518, 115.188919],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_a09fa6ac9ba5e5a472c81eb64908b3dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_471035c863266788cb90ac508748a59f.setIcon(icon_a09fa6ac9ba5e5a472c81eb64908b3dd);
+        
+    
+        var popup_b3f02c3fd28f345f47b81bfb1c7c9f20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65b0fd1d67840e2cac3e1acdef944863 = $(`<div id="html_65b0fd1d67840e2cac3e1acdef944863" style="width: 100.0%; height: 100.0%;">Destination: Bali&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 24.68331360946748°C&lt;br&gt;Humidity: 80.31952662721893%</div>`)[0];
+                popup_b3f02c3fd28f345f47b81bfb1c7c9f20.setContent(html_65b0fd1d67840e2cac3e1acdef944863);
+            
+        
+
+        marker_471035c863266788cb90ac508748a59f.bindPopup(popup_b3f02c3fd28f345f47b81bfb1c7c9f20)
+        ;
+
+        
+    
+    
+            var marker_f8684112ed3fdb8cfdc46e6f719b29f3 = L.marker(
+                [-8.409518, 115.188919],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_6b2be95fda322a801dc0d4e640665e9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f8684112ed3fdb8cfdc46e6f719b29f3.setIcon(icon_6b2be95fda322a801dc0d4e640665e9f);
+        
+    
+        var popup_5f9f436f32eae5c474fd136474347150 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58aa98b8f3220f2390b4248718389c91 = $(`<div id="html_58aa98b8f3220f2390b4248718389c91" style="width: 100.0%; height: 100.0%;">Destination: Bali&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 24.68331360946748°C&lt;br&gt;Humidity: 80.31952662721893%</div>`)[0];
+                popup_5f9f436f32eae5c474fd136474347150.setContent(html_58aa98b8f3220f2390b4248718389c91);
+            
+        
+
+        marker_f8684112ed3fdb8cfdc46e6f719b29f3.bindPopup(popup_5f9f436f32eae5c474fd136474347150)
+        ;
+
+        
+    
+    
+            var marker_d96e66f8ef34fe0c07e93255133010c1 = L.marker(
+                [-8.409518, 115.188919],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_cbd6c79a91a5a0408495cf51b01a3acc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d96e66f8ef34fe0c07e93255133010c1.setIcon(icon_cbd6c79a91a5a0408495cf51b01a3acc);
+        
+    
+        var popup_351dc12da7077e31c3afed35f5e107f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2c7a0d43b49c68f1dfeeb601dad9383 = $(`<div id="html_c2c7a0d43b49c68f1dfeeb601dad9383" style="width: 100.0%; height: 100.0%;">Destination: Bali&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 24.68331360946748°C&lt;br&gt;Humidity: 80.31952662721893%</div>`)[0];
+                popup_351dc12da7077e31c3afed35f5e107f1.setContent(html_c2c7a0d43b49c68f1dfeeb601dad9383);
+            
+        
+
+        marker_d96e66f8ef34fe0c07e93255133010c1.bindPopup(popup_351dc12da7077e31c3afed35f5e107f1)
+        ;
+
+        
+    
+    
+            var marker_89638fda2db17f1529532ae046c692a5 = L.marker(
+                [-8.409518, 115.188919],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_462d9deed11d9a31fbbd0565f4977e37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89638fda2db17f1529532ae046c692a5.setIcon(icon_462d9deed11d9a31fbbd0565f4977e37);
+        
+    
+        var popup_9978342b7632e3392a0dc11bfd9ee545 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b0cd6391d5c218aefc6d9c0b8984294 = $(`<div id="html_2b0cd6391d5c218aefc6d9c0b8984294" style="width: 100.0%; height: 100.0%;">Destination: Bali&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 24.68331360946748°C&lt;br&gt;Humidity: 80.31952662721893%</div>`)[0];
+                popup_9978342b7632e3392a0dc11bfd9ee545.setContent(html_2b0cd6391d5c218aefc6d9c0b8984294);
+            
+        
+
+        marker_89638fda2db17f1529532ae046c692a5.bindPopup(popup_9978342b7632e3392a0dc11bfd9ee545)
+        ;
+
+        
+    
+    
+            var marker_ea327ed9261165c9ecba19e56d17e945 = L.marker(
+                [-8.409518, 115.188919],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_cb22c42c7c8a546be0745db9c6ddeaee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea327ed9261165c9ecba19e56d17e945.setIcon(icon_cb22c42c7c8a546be0745db9c6ddeaee);
+        
+    
+        var popup_228400bf13be2002986cd97208c6f651 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_060b31238dec8c02330029cae187b02c = $(`<div id="html_060b31238dec8c02330029cae187b02c" style="width: 100.0%; height: 100.0%;">Destination: Bali&lt;br&gt;Month: 2023-02&lt;br&gt;Temperature: 25.641005917159777°C&lt;br&gt;Humidity: 87.92899408284023%</div>`)[0];
+                popup_228400bf13be2002986cd97208c6f651.setContent(html_060b31238dec8c02330029cae187b02c);
+            
+        
+
+        marker_ea327ed9261165c9ecba19e56d17e945.bindPopup(popup_228400bf13be2002986cd97208c6f651)
+        ;
+
+        
+    
+    
+            var marker_b1b7858dee277034f62f7f3a63f8b610 = L.marker(
+                [-8.409518, 115.188919],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_85eba5b06e3aaf2513a873f4d4b5c03f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b1b7858dee277034f62f7f3a63f8b610.setIcon(icon_85eba5b06e3aaf2513a873f4d4b5c03f);
+        
+    
+        var popup_6015c37eb6096a74edce7b476b8dee1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaaf881d131ccf9e16d158d782fd92b8 = $(`<div id="html_eaaf881d131ccf9e16d158d782fd92b8" style="width: 100.0%; height: 100.0%;">Destination: Bali&lt;br&gt;Month: 2023-02&lt;br&gt;Temperature: 25.641005917159777°C&lt;br&gt;Humidity: 87.92899408284023%</div>`)[0];
+                popup_6015c37eb6096a74edce7b476b8dee1d.setContent(html_eaaf881d131ccf9e16d158d782fd92b8);
+            
+        
+
+        marker_b1b7858dee277034f62f7f3a63f8b610.bindPopup(popup_6015c37eb6096a74edce7b476b8dee1d)
+        ;
+
+        
+    
+    
+            var marker_d370fd35b42116e3c4f48403863b27a2 = L.marker(
+                [-8.409518, 115.188919],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_174ae3bf0960c0100a39a2f01b1669d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d370fd35b42116e3c4f48403863b27a2.setIcon(icon_174ae3bf0960c0100a39a2f01b1669d2);
+        
+    
+        var popup_bce27b50c6e70664cc330fe907767a38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fac4f013c1ff7e638d0efd4e0344a8af = $(`<div id="html_fac4f013c1ff7e638d0efd4e0344a8af" style="width: 100.0%; height: 100.0%;">Destination: Bali&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 27.15402366863905°C&lt;br&gt;Humidity: 87.66863905325444%</div>`)[0];
+                popup_bce27b50c6e70664cc330fe907767a38.setContent(html_fac4f013c1ff7e638d0efd4e0344a8af);
+            
+        
+
+        marker_d370fd35b42116e3c4f48403863b27a2.bindPopup(popup_bce27b50c6e70664cc330fe907767a38)
+        ;
+
+        
+    
+    
+            var marker_04c2625eb74f1232fea3e13493e7cc8f = L.marker(
+                [-8.409518, 115.188919],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_2fe39ed78a1f9f1e555f026a04beeaf9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_04c2625eb74f1232fea3e13493e7cc8f.setIcon(icon_2fe39ed78a1f9f1e555f026a04beeaf9);
+        
+    
+        var popup_3b85f4f9b998c159d67416bcfef5bc37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f825387c070134000647c2b09005a15 = $(`<div id="html_8f825387c070134000647c2b09005a15" style="width: 100.0%; height: 100.0%;">Destination: Bali&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 26.905976331360968°C&lt;br&gt;Humidity: 77.58579881656804%</div>`)[0];
+                popup_3b85f4f9b998c159d67416bcfef5bc37.setContent(html_8f825387c070134000647c2b09005a15);
+            
+        
+
+        marker_04c2625eb74f1232fea3e13493e7cc8f.bindPopup(popup_3b85f4f9b998c159d67416bcfef5bc37)
+        ;
+
+        
+    
+    
+            var marker_502cbaf7213a4876445217cdf38889c9 = L.marker(
+                [-8.409518, 115.188919],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_e20a9fd0c8fdf754c03e45e10c022d9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_502cbaf7213a4876445217cdf38889c9.setIcon(icon_e20a9fd0c8fdf754c03e45e10c022d9f);
+        
+    
+        var popup_086370e569c5234dac1709a50986e28e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88ac4628dd2596aeb25dfea5d4f9d6ed = $(`<div id="html_88ac4628dd2596aeb25dfea5d4f9d6ed" style="width: 100.0%; height: 100.0%;">Destination: Bali&lt;br&gt;Month: 2023-04&lt;br&gt;Temperature: 26.041005917159787°C&lt;br&gt;Humidity: 85.81656804733728%</div>`)[0];
+                popup_086370e569c5234dac1709a50986e28e.setContent(html_88ac4628dd2596aeb25dfea5d4f9d6ed);
+            
+        
+
+        marker_502cbaf7213a4876445217cdf38889c9.bindPopup(popup_086370e569c5234dac1709a50986e28e)
+        ;
+
+        
+    
+    
+            var marker_e87887d7279eccc13f2ebe169ddda384 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_c046c0e0a9464ccaac5aa4a6028e649e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e87887d7279eccc13f2ebe169ddda384.setIcon(icon_c046c0e0a9464ccaac5aa4a6028e649e);
+        
+    
+        var popup_4b26e69f6a6b9543444f73653bfc1d16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27680c451270593b6b8110a6489c8258 = $(`<div id="html_27680c451270593b6b8110a6489c8258" style="width: 100.0%; height: 100.0%;">Destination: New York&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 23.39260355029589°C&lt;br&gt;Humidity: 62.84615384615385%</div>`)[0];
+                popup_4b26e69f6a6b9543444f73653bfc1d16.setContent(html_27680c451270593b6b8110a6489c8258);
+            
+        
+
+        marker_e87887d7279eccc13f2ebe169ddda384.bindPopup(popup_4b26e69f6a6b9543444f73653bfc1d16)
+        ;
+
+        
+    
+    
+            var marker_dae8daf0fb150ccfce52e1e421b49289 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_e81ae92ffe465ef311ec17400f8f95e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dae8daf0fb150ccfce52e1e421b49289.setIcon(icon_e81ae92ffe465ef311ec17400f8f95e4);
+        
+    
+        var popup_d2d9c6510d7a59fd27aa565ede9dc82c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37b047757dcce9805ede38041f78bae5 = $(`<div id="html_37b047757dcce9805ede38041f78bae5" style="width: 100.0%; height: 100.0%;">Destination: New York&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 23.39260355029589°C&lt;br&gt;Humidity: 62.84615384615385%</div>`)[0];
+                popup_d2d9c6510d7a59fd27aa565ede9dc82c.setContent(html_37b047757dcce9805ede38041f78bae5);
+            
+        
+
+        marker_dae8daf0fb150ccfce52e1e421b49289.bindPopup(popup_d2d9c6510d7a59fd27aa565ede9dc82c)
+        ;
+
+        
+    
+    
+            var marker_91a4778b8f0dd5c5875eb8781da4ed66 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_323bf02547cfea6dd79c5301ddfbcd1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_91a4778b8f0dd5c5875eb8781da4ed66.setIcon(icon_323bf02547cfea6dd79c5301ddfbcd1a);
+        
+    
+        var popup_354967e77daa3a55404dc0036b6c0606 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddf603c99801dc7387a877f981990b79 = $(`<div id="html_ddf603c99801dc7387a877f981990b79" style="width: 100.0%; height: 100.0%;">Destination: New York&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 9.96337278106512°C&lt;br&gt;Humidity: 61.85207100591716%</div>`)[0];
+                popup_354967e77daa3a55404dc0036b6c0606.setContent(html_ddf603c99801dc7387a877f981990b79);
+            
+        
+
+        marker_91a4778b8f0dd5c5875eb8781da4ed66.bindPopup(popup_354967e77daa3a55404dc0036b6c0606)
+        ;
+
+        
+    
+    
+            var marker_101ddce8031334d9dd7bb796d7ec8ab5 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_02e8686ed10f95b29ba0a4407e248e87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_101ddce8031334d9dd7bb796d7ec8ab5.setIcon(icon_02e8686ed10f95b29ba0a4407e248e87);
+        
+    
+        var popup_377a340328e2fea92133dd0db01704db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b7401e93e14a5c66c707cb1b190312d = $(`<div id="html_4b7401e93e14a5c66c707cb1b190312d" style="width: 100.0%; height: 100.0%;">Destination: New York&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 9.96337278106512°C&lt;br&gt;Humidity: 61.85207100591716%</div>`)[0];
+                popup_377a340328e2fea92133dd0db01704db.setContent(html_4b7401e93e14a5c66c707cb1b190312d);
+            
+        
+
+        marker_101ddce8031334d9dd7bb796d7ec8ab5.bindPopup(popup_377a340328e2fea92133dd0db01704db)
+        ;
+
+        
+    
+    
+            var marker_98c4c390e55b310b6dd5f713796f6d0a = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_cf34a19996be4d665ef7af77520e0dad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_98c4c390e55b310b6dd5f713796f6d0a.setIcon(icon_cf34a19996be4d665ef7af77520e0dad);
+        
+    
+        var popup_d9668d75dfbc664fa9d3c2534f237d22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dc120fdc2cc2d111a5887bc2154d461 = $(`<div id="html_7dc120fdc2cc2d111a5887bc2154d461" style="width: 100.0%; height: 100.0%;">Destination: New York&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 25.91420118343198°C&lt;br&gt;Humidity: 74.88165680473372%</div>`)[0];
+                popup_d9668d75dfbc664fa9d3c2534f237d22.setContent(html_7dc120fdc2cc2d111a5887bc2154d461);
+            
+        
+
+        marker_98c4c390e55b310b6dd5f713796f6d0a.bindPopup(popup_d9668d75dfbc664fa9d3c2534f237d22)
+        ;
+
+        
+    
+    
+            var marker_de2cab7aed0e8ce6d99b62370f0eb44e = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_61cde6910a79420c3ecdb54ddf1c8ba1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_de2cab7aed0e8ce6d99b62370f0eb44e.setIcon(icon_61cde6910a79420c3ecdb54ddf1c8ba1);
+        
+    
+        var popup_123d66af62815f726a3cbb33822bf822 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5e35697ca1a33014341c31ed05501ee = $(`<div id="html_c5e35697ca1a33014341c31ed05501ee" style="width: 100.0%; height: 100.0%;">Destination: New York&lt;br&gt;Month: 2023-10&lt;br&gt;Temperature: 19.963254437869868°C&lt;br&gt;Humidity: 76.31952662721893%</div>`)[0];
+                popup_123d66af62815f726a3cbb33822bf822.setContent(html_c5e35697ca1a33014341c31ed05501ee);
+            
+        
+
+        marker_de2cab7aed0e8ce6d99b62370f0eb44e.bindPopup(popup_123d66af62815f726a3cbb33822bf822)
+        ;
+
+        
+    
+    
+            var marker_b5f1b2f4fe9725182de2e64625148610 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_489a7ed5feae1a880fff24a33f99f238 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b5f1b2f4fe9725182de2e64625148610.setIcon(icon_489a7ed5feae1a880fff24a33f99f238);
+        
+    
+        var popup_9f67e3c8c517c75dc30af7a044815ba7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d47edb8aeaac5f0823689c714d2416d6 = $(`<div id="html_d47edb8aeaac5f0823689c714d2416d6" style="width: 100.0%; height: 100.0%;">Destination: New York&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 13.150473372781088°C&lt;br&gt;Humidity: 63.56804733727811%</div>`)[0];
+                popup_9f67e3c8c517c75dc30af7a044815ba7.setContent(html_d47edb8aeaac5f0823689c714d2416d6);
+            
+        
+
+        marker_b5f1b2f4fe9725182de2e64625148610.bindPopup(popup_9f67e3c8c517c75dc30af7a044815ba7)
+        ;
+
+        
+    
+    
+            var marker_5ffa95d0ba73f00bea9526faa415ebe1 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_8c58d3dde0a58091b61d85deb61bc41c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5ffa95d0ba73f00bea9526faa415ebe1.setIcon(icon_8c58d3dde0a58091b61d85deb61bc41c);
+        
+    
+        var popup_bd5c34a82e6d6d078ac398f38a678940 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f143e0f99e08d8b232a8dcc0037ecfc1 = $(`<div id="html_f143e0f99e08d8b232a8dcc0037ecfc1" style="width: 100.0%; height: 100.0%;">Destination: New York&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 19.114911242603576°C&lt;br&gt;Humidity: 56.994082840236686%</div>`)[0];
+                popup_bd5c34a82e6d6d078ac398f38a678940.setContent(html_f143e0f99e08d8b232a8dcc0037ecfc1);
+            
+        
+
+        marker_5ffa95d0ba73f00bea9526faa415ebe1.bindPopup(popup_bd5c34a82e6d6d078ac398f38a678940)
+        ;
+
+        
+    
+    
+            var marker_71aea64b9f3bdd88b48c286951ff4740 = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_7ad2ab9da43ec158dcd3d4115b854ba8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_71aea64b9f3bdd88b48c286951ff4740.setIcon(icon_7ad2ab9da43ec158dcd3d4115b854ba8);
+        
+    
+        var popup_9a91ebc3df655895b3db78720e578c14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52f24b4aa26bee85b4ac871f4ec9808e = $(`<div id="html_52f24b4aa26bee85b4ac871f4ec9808e" style="width: 100.0%; height: 100.0%;">Destination: Tokyo&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 28.116153846153864°C&lt;br&gt;Humidity: 78.4319526627219%</div>`)[0];
+                popup_9a91ebc3df655895b3db78720e578c14.setContent(html_52f24b4aa26bee85b4ac871f4ec9808e);
+            
+        
+
+        marker_71aea64b9f3bdd88b48c286951ff4740.bindPopup(popup_9a91ebc3df655895b3db78720e578c14)
+        ;
+
+        
+    
+    
+            var marker_22f36511c0f6f6cea655e3a90c3c94e8 = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_1f6ca65ccae79803dd175a1a15d001d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_22f36511c0f6f6cea655e3a90c3c94e8.setIcon(icon_1f6ca65ccae79803dd175a1a15d001d2);
+        
+    
+        var popup_12c88f8a6b80444593978d6d57ea19df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7393775d6ec3ba8d044acf09d0593202 = $(`<div id="html_7393775d6ec3ba8d044acf09d0593202" style="width: 100.0%; height: 100.0%;">Destination: Tokyo&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 28.116153846153864°C&lt;br&gt;Humidity: 78.4319526627219%</div>`)[0];
+                popup_12c88f8a6b80444593978d6d57ea19df.setContent(html_7393775d6ec3ba8d044acf09d0593202);
+            
+        
+
+        marker_22f36511c0f6f6cea655e3a90c3c94e8.bindPopup(popup_12c88f8a6b80444593978d6d57ea19df)
+        ;
+
+        
+    
+    
+            var marker_f79501c501e8c57bb20ed150e20025d3 = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_ec160ffc7640ee795975c63f437d64ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f79501c501e8c57bb20ed150e20025d3.setIcon(icon_ec160ffc7640ee795975c63f437d64ed);
+        
+    
+        var popup_4ba0aec5a908a448f54b7cf98fa6232f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_104dde8f8d2f3a8601d69622cfb006b3 = $(`<div id="html_104dde8f8d2f3a8601d69622cfb006b3" style="width: 100.0%; height: 100.0%;">Destination: Tokyo&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 28.116153846153864°C&lt;br&gt;Humidity: 78.4319526627219%</div>`)[0];
+                popup_4ba0aec5a908a448f54b7cf98fa6232f.setContent(html_104dde8f8d2f3a8601d69622cfb006b3);
+            
+        
+
+        marker_f79501c501e8c57bb20ed150e20025d3.bindPopup(popup_4ba0aec5a908a448f54b7cf98fa6232f)
+        ;
+
+        
+    
+    
+            var marker_d54515aade7a665fc9ff4791f8067fb2 = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_3ed4c4ff57c7ce38d7572bcb24322b93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d54515aade7a665fc9ff4791f8067fb2.setIcon(icon_3ed4c4ff57c7ce38d7572bcb24322b93);
+        
+    
+        var popup_9b25a936d51910aa821fed0896d506b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ce40307b84882c31b4d57b55dca3943 = $(`<div id="html_7ce40307b84882c31b4d57b55dca3943" style="width: 100.0%; height: 100.0%;">Destination: Tokyo&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 28.116153846153864°C&lt;br&gt;Humidity: 78.4319526627219%</div>`)[0];
+                popup_9b25a936d51910aa821fed0896d506b5.setContent(html_7ce40307b84882c31b4d57b55dca3943);
+            
+        
+
+        marker_d54515aade7a665fc9ff4791f8067fb2.bindPopup(popup_9b25a936d51910aa821fed0896d506b5)
+        ;
+
+        
+    
+    
+            var marker_3512bb891f572aab659809c80008b571 = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_3d2a2be0daa4de5b99c37cba6207a843 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3512bb891f572aab659809c80008b571.setIcon(icon_3d2a2be0daa4de5b99c37cba6207a843);
+        
+    
+        var popup_865ad2930effbebc2d1d74aa2dc4da70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_304169695696cd455223219f77fa80d0 = $(`<div id="html_304169695696cd455223219f77fa80d0" style="width: 100.0%; height: 100.0%;">Destination: Tokyo&lt;br&gt;Month: 2023-10&lt;br&gt;Temperature: 21.357751479289966°C&lt;br&gt;Humidity: 58.44378698224852%</div>`)[0];
+                popup_865ad2930effbebc2d1d74aa2dc4da70.setContent(html_304169695696cd455223219f77fa80d0);
+            
+        
+
+        marker_3512bb891f572aab659809c80008b571.bindPopup(popup_865ad2930effbebc2d1d74aa2dc4da70)
+        ;
+
+        
+    
+    
+            var marker_c4d6b970f03610b66a14bff3592429f9 = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_4ceac0373e22f4144bbba1a9cfaee87d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c4d6b970f03610b66a14bff3592429f9.setIcon(icon_4ceac0373e22f4144bbba1a9cfaee87d);
+        
+    
+        var popup_c712ab0a2c34441034087c8f46527cb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68f34a71472449ec8e6e019f51d11b8f = $(`<div id="html_68f34a71472449ec8e6e019f51d11b8f" style="width: 100.0%; height: 100.0%;">Destination: Tokyo&lt;br&gt;Month: 2023-10&lt;br&gt;Temperature: 21.357751479289966°C&lt;br&gt;Humidity: 58.44378698224852%</div>`)[0];
+                popup_c712ab0a2c34441034087c8f46527cb5.setContent(html_68f34a71472449ec8e6e019f51d11b8f);
+            
+        
+
+        marker_c4d6b970f03610b66a14bff3592429f9.bindPopup(popup_c712ab0a2c34441034087c8f46527cb5)
+        ;
+
+        
+    
+    
+            var marker_e50daacee5f5432917b3320d1bccb476 = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_a72d73ab73b999d2b291c6d89a3dd752 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e50daacee5f5432917b3320d1bccb476.setIcon(icon_a72d73ab73b999d2b291c6d89a3dd752);
+        
+    
+        var popup_5c33d2249e45c43ee9f28583edb2f616 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ea6b40463ed7f9862d5ee54e537df46 = $(`<div id="html_2ea6b40463ed7f9862d5ee54e537df46" style="width: 100.0%; height: 100.0%;">Destination: Tokyo&lt;br&gt;Month: 2023-10&lt;br&gt;Temperature: 21.357751479289966°C&lt;br&gt;Humidity: 58.44378698224852%</div>`)[0];
+                popup_5c33d2249e45c43ee9f28583edb2f616.setContent(html_2ea6b40463ed7f9862d5ee54e537df46);
+            
+        
+
+        marker_e50daacee5f5432917b3320d1bccb476.bindPopup(popup_5c33d2249e45c43ee9f28583edb2f616)
+        ;
+
+        
+    
+    
+            var marker_c9ce9e32f74c6f893c68091080d932a5 = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_1764bda8704b3c6c16acd10070a4ecac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c9ce9e32f74c6f893c68091080d932a5.setIcon(icon_1764bda8704b3c6c16acd10070a4ecac);
+        
+    
+        var popup_222b81fae9d115c2a63ca4d649f4067b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bd2f6f24bd1df5483a35aab600192b9 = $(`<div id="html_1bd2f6f24bd1df5483a35aab600192b9" style="width: 100.0%; height: 100.0%;">Destination: Tokyo&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 20.68579881656808°C&lt;br&gt;Humidity: 69.9171597633136%</div>`)[0];
+                popup_222b81fae9d115c2a63ca4d649f4067b.setContent(html_1bd2f6f24bd1df5483a35aab600192b9);
+            
+        
+
+        marker_c9ce9e32f74c6f893c68091080d932a5.bindPopup(popup_222b81fae9d115c2a63ca4d649f4067b)
+        ;
+
+        
+    
+    
+            var marker_e4d08922c7a76af2e1b8026d19214011 = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_1ab9a96181bd387d60a1b9c18997ae9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e4d08922c7a76af2e1b8026d19214011.setIcon(icon_1ab9a96181bd387d60a1b9c18997ae9e);
+        
+    
+        var popup_5e248304c5d921f310693d5de9860ee9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c2ccceb94d70933fdfee9aff86b4c96 = $(`<div id="html_0c2ccceb94d70933fdfee9aff86b4c96" style="width: 100.0%; height: 100.0%;">Destination: Tokyo&lt;br&gt;Month: 2023-01&lt;br&gt;Temperature: 6.5368639053254665°C&lt;br&gt;Humidity: 45.70414201183432%</div>`)[0];
+                popup_5e248304c5d921f310693d5de9860ee9.setContent(html_0c2ccceb94d70933fdfee9aff86b4c96);
+            
+        
+
+        marker_e4d08922c7a76af2e1b8026d19214011.bindPopup(popup_5e248304c5d921f310693d5de9860ee9)
+        ;
+
+        
+    
+    
+            var marker_8c73166f99c12bef6e80372b4d7c469e = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_6f7830bf6245ff81236d648d4646f3f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8c73166f99c12bef6e80372b4d7c469e.setIcon(icon_6f7830bf6245ff81236d648d4646f3f3);
+        
+    
+        var popup_e29aa0b6ee58dfe4f3032dfd2d098144 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3ae4386c446ddd5aff3b03d68d4596b = $(`<div id="html_b3ae4386c446ddd5aff3b03d68d4596b" style="width: 100.0%; height: 100.0%;">Destination: Tokyo&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 27.21727810650888°C&lt;br&gt;Humidity: 74.46745562130178%</div>`)[0];
+                popup_e29aa0b6ee58dfe4f3032dfd2d098144.setContent(html_b3ae4386c446ddd5aff3b03d68d4596b);
+            
+        
+
+        marker_8c73166f99c12bef6e80372b4d7c469e.bindPopup(popup_e29aa0b6ee58dfe4f3032dfd2d098144)
+        ;
+
+        
+    
+    
+            var marker_99aa28db83876c0ebf5a090aa3e20f9f = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_b480294474910f1a26d0d9ec200ac029 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_99aa28db83876c0ebf5a090aa3e20f9f.setIcon(icon_b480294474910f1a26d0d9ec200ac029);
+        
+    
+        var popup_5c6465cf87ba2b6fd8569688c1f81eeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12fe72b68193267db8c015591508e1bc = $(`<div id="html_12fe72b68193267db8c015591508e1bc" style="width: 100.0%; height: 100.0%;">Destination: Tokyo&lt;br&gt;Month: 2023-02&lt;br&gt;Temperature: 7.675562130177542°C&lt;br&gt;Humidity: 52.93491124260355%</div>`)[0];
+                popup_5c6465cf87ba2b6fd8569688c1f81eeb.setContent(html_12fe72b68193267db8c015591508e1bc);
+            
+        
+
+        marker_99aa28db83876c0ebf5a090aa3e20f9f.bindPopup(popup_5c6465cf87ba2b6fd8569688c1f81eeb)
+        ;
+
+        
+    
+    
+            var marker_3d4a6f47248585ceb45e672cb039f128 = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_85b89dc24b73e6e461dd59d2fdbcd5cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d4a6f47248585ceb45e672cb039f128.setIcon(icon_85b89dc24b73e6e461dd59d2fdbcd5cd);
+        
+    
+        var popup_a083d23ef6971bea14d3a072b461a628 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6bc46e10b7d27763db5c4d3fa5fb513 = $(`<div id="html_e6bc46e10b7d27763db5c4d3fa5fb513" style="width: 100.0%; height: 100.0%;">Destination: Tokyo&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 19.19165680473375°C&lt;br&gt;Humidity: 64.09467455621302%</div>`)[0];
+                popup_a083d23ef6971bea14d3a072b461a628.setContent(html_e6bc46e10b7d27763db5c4d3fa5fb513);
+            
+        
+
+        marker_3d4a6f47248585ceb45e672cb039f128.bindPopup(popup_a083d23ef6971bea14d3a072b461a628)
+        ;
+
+        
+    
+    
+            var marker_dce1d96e782a309e7fb40f5100f7a006 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_7b22ca6802cd1799a46c5348b82905eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dce1d96e782a309e7fb40f5100f7a006.setIcon(icon_7b22ca6802cd1799a46c5348b82905eb);
+        
+    
+        var popup_69407730d3c01baf774878069460208a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7008ff671df97827771bbfb1e6562fba = $(`<div id="html_7008ff671df97827771bbfb1e6562fba" style="width: 100.0%; height: 100.0%;">Destination: Paris&lt;br&gt;Month: 2023-10&lt;br&gt;Temperature: 17.316568047337306°C&lt;br&gt;Humidity: 72.42011834319527%</div>`)[0];
+                popup_69407730d3c01baf774878069460208a.setContent(html_7008ff671df97827771bbfb1e6562fba);
+            
+        
+
+        marker_dce1d96e782a309e7fb40f5100f7a006.bindPopup(popup_69407730d3c01baf774878069460208a)
+        ;
+
+        
+    
+    
+            var marker_7eef3cfa7c0537831dc919a9b8dd122b = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_2001b8d338f66254a526dbd83a7544d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7eef3cfa7c0537831dc919a9b8dd122b.setIcon(icon_2001b8d338f66254a526dbd83a7544d5);
+        
+    
+        var popup_da11c91884a109421f5abcaeb4041e3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_481fb41a7d01ea2036eff8db88dd5a5b = $(`<div id="html_481fb41a7d01ea2036eff8db88dd5a5b" style="width: 100.0%; height: 100.0%;">Destination: Paris&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 24.242426035502987°C&lt;br&gt;Humidity: 65.24260355029585%</div>`)[0];
+                popup_da11c91884a109421f5abcaeb4041e3a.setContent(html_481fb41a7d01ea2036eff8db88dd5a5b);
+            
+        
+
+        marker_7eef3cfa7c0537831dc919a9b8dd122b.bindPopup(popup_da11c91884a109421f5abcaeb4041e3a)
+        ;
+
+        
+    
+    
+            var marker_8f05270c0ad6c5827a90652a1779caeb = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_e1598a6a7f011362fc6b585d47c75685 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8f05270c0ad6c5827a90652a1779caeb.setIcon(icon_e1598a6a7f011362fc6b585d47c75685);
+        
+    
+        var popup_0a788deb1fd131c079cedbc9cae23f68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1a1afa74143c005bd546fc808903558 = $(`<div id="html_d1a1afa74143c005bd546fc808903558" style="width: 100.0%; height: 100.0%;">Destination: Paris&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 10.47479289940831°C&lt;br&gt;Humidity: 83.16568047337279%</div>`)[0];
+                popup_0a788deb1fd131c079cedbc9cae23f68.setContent(html_d1a1afa74143c005bd546fc808903558);
+            
+        
+
+        marker_8f05270c0ad6c5827a90652a1779caeb.bindPopup(popup_0a788deb1fd131c079cedbc9cae23f68)
+        ;
+
+        
+    
+    
+            var marker_ac6ef661cdb302ebb80cf4300c46b76e = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_1912c5350478b2cf73898e3645463508 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ac6ef661cdb302ebb80cf4300c46b76e.setIcon(icon_1912c5350478b2cf73898e3645463508);
+        
+    
+        var popup_06b34c10ec9045d112a9a664ca7240c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7e7ddebc06014ef016a66f02d576e7f = $(`<div id="html_c7e7ddebc06014ef016a66f02d576e7f" style="width: 100.0%; height: 100.0%;">Destination: Paris&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 10.47479289940831°C&lt;br&gt;Humidity: 83.16568047337279%</div>`)[0];
+                popup_06b34c10ec9045d112a9a664ca7240c4.setContent(html_c7e7ddebc06014ef016a66f02d576e7f);
+            
+        
+
+        marker_ac6ef661cdb302ebb80cf4300c46b76e.bindPopup(popup_06b34c10ec9045d112a9a664ca7240c4)
+        ;
+
+        
+    
+    
+            var marker_3aa768b9e5722e3fdb8857eeb3a91d21 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_cf315253f36f22559d3af564f4ce4c19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3aa768b9e5722e3fdb8857eeb3a91d21.setIcon(icon_cf315253f36f22559d3af564f4ce4c19);
+        
+    
+        var popup_bdbd89c066a5e2b204593671efdb146e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39e1fcd171db1175628ade479c70a604 = $(`<div id="html_39e1fcd171db1175628ade479c70a604" style="width: 100.0%; height: 100.0%;">Destination: Paris&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 19.6385207100592°C&lt;br&gt;Humidity: 57.55621301775148%</div>`)[0];
+                popup_bdbd89c066a5e2b204593671efdb146e.setContent(html_39e1fcd171db1175628ade479c70a604);
+            
+        
+
+        marker_3aa768b9e5722e3fdb8857eeb3a91d21.bindPopup(popup_bdbd89c066a5e2b204593671efdb146e)
+        ;
+
+        
+    
+    
+            var marker_22530d9e83caaa6fe15364930aeffc31 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_f2bd4f357c92c9675d3fed4690f2f240 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_22530d9e83caaa6fe15364930aeffc31.setIcon(icon_f2bd4f357c92c9675d3fed4690f2f240);
+        
+    
+        var popup_c8bd9d72a3ba91a638d17abccecd4594 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8d0d08a1cc42f8d5fb0e3aac0d8bfdf = $(`<div id="html_b8d0d08a1cc42f8d5fb0e3aac0d8bfdf" style="width: 100.0%; height: 100.0%;">Destination: Paris&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 19.6385207100592°C&lt;br&gt;Humidity: 57.55621301775148%</div>`)[0];
+                popup_c8bd9d72a3ba91a638d17abccecd4594.setContent(html_b8d0d08a1cc42f8d5fb0e3aac0d8bfdf);
+            
+        
+
+        marker_22530d9e83caaa6fe15364930aeffc31.bindPopup(popup_c8bd9d72a3ba91a638d17abccecd4594)
+        ;
+
+        
+    
+    
+            var marker_9493ebba656b417c6dd26a632f4a6274 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_176059db4b7b870bcd3d8612e0445570 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9493ebba656b417c6dd26a632f4a6274.setIcon(icon_176059db4b7b870bcd3d8612e0445570);
+        
+    
+        var popup_7aba4a0c1fcba303ad83e0aa6aab03d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16519ac8ac2c02721385690c152fe453 = $(`<div id="html_16519ac8ac2c02721385690c152fe453" style="width: 100.0%; height: 100.0%;">Destination: Paris&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 19.6385207100592°C&lt;br&gt;Humidity: 57.55621301775148%</div>`)[0];
+                popup_7aba4a0c1fcba303ad83e0aa6aab03d2.setContent(html_16519ac8ac2c02721385690c152fe453);
+            
+        
+
+        marker_9493ebba656b417c6dd26a632f4a6274.bindPopup(popup_7aba4a0c1fcba303ad83e0aa6aab03d2)
+        ;
+
+        
+    
+    
+            var marker_336a1dbe2774abe37761692fe81ec257 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_6a951d13a2d68aac6f6123a5d8527348 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_336a1dbe2774abe37761692fe81ec257.setIcon(icon_6a951d13a2d68aac6f6123a5d8527348);
+        
+    
+        var popup_baf93787de5f438f81187c5c5124aaa3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c16d3e7665895584ca239a695d1494e = $(`<div id="html_6c16d3e7665895584ca239a695d1494e" style="width: 100.0%; height: 100.0%;">Destination: Paris&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 19.6385207100592°C&lt;br&gt;Humidity: 57.55621301775148%</div>`)[0];
+                popup_baf93787de5f438f81187c5c5124aaa3.setContent(html_6c16d3e7665895584ca239a695d1494e);
+            
+        
+
+        marker_336a1dbe2774abe37761692fe81ec257.bindPopup(popup_baf93787de5f438f81187c5c5124aaa3)
+        ;
+
+        
+    
+    
+            var marker_051f4f96f1ff4df3d91e8c242c18f4ca = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_4bc296cc9bc34ea792ae285bf06d9d16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_051f4f96f1ff4df3d91e8c242c18f4ca.setIcon(icon_4bc296cc9bc34ea792ae285bf06d9d16);
+        
+    
+        var popup_42d950885363dbd9bfafb952553433ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76588dfe87a4f71b24c440996fe90e78 = $(`<div id="html_76588dfe87a4f71b24c440996fe90e78" style="width: 100.0%; height: 100.0%;">Destination: Paris&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 17.483431952662745°C&lt;br&gt;Humidity: 77.9585798816568%</div>`)[0];
+                popup_42d950885363dbd9bfafb952553433ee.setContent(html_76588dfe87a4f71b24c440996fe90e78);
+            
+        
+
+        marker_051f4f96f1ff4df3d91e8c242c18f4ca.bindPopup(popup_42d950885363dbd9bfafb952553433ee)
+        ;
+
+        
+    
+    
+            var marker_6dbc47494bfb330ac8cfa7099d2b26a5 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_2043320265d4849e6d535b78c1544bc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6dbc47494bfb330ac8cfa7099d2b26a5.setIcon(icon_2043320265d4849e6d535b78c1544bc9);
+        
+    
+        var popup_864db5f513a5a439e437910fb9bcabf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e68b24d506e749349a27386bb354936c = $(`<div id="html_e68b24d506e749349a27386bb354936c" style="width: 100.0%; height: 100.0%;">Destination: Paris&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 20.071183431952694°C&lt;br&gt;Humidity: 63.248520710059175%</div>`)[0];
+                popup_864db5f513a5a439e437910fb9bcabf9.setContent(html_e68b24d506e749349a27386bb354936c);
+            
+        
+
+        marker_6dbc47494bfb330ac8cfa7099d2b26a5.bindPopup(popup_864db5f513a5a439e437910fb9bcabf9)
+        ;
+
+        
+    
+    
+            var marker_cb5309b4af0d4b0f276812699b7e7d3a = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_6e79abf79074f54d171d063238a80105 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb5309b4af0d4b0f276812699b7e7d3a.setIcon(icon_6e79abf79074f54d171d063238a80105);
+        
+    
+        var popup_b3a6ca9ebca1d2ee3edaca716a9ba81e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca5c4b562296c4f3f035c002103dc4d3 = $(`<div id="html_ca5c4b562296c4f3f035c002103dc4d3" style="width: 100.0%; height: 100.0%;">Destination: Paris&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 15.261360946745588°C&lt;br&gt;Humidity: 77.33727810650888%</div>`)[0];
+                popup_b3a6ca9ebca1d2ee3edaca716a9ba81e.setContent(html_ca5c4b562296c4f3f035c002103dc4d3);
+            
+        
+
+        marker_cb5309b4af0d4b0f276812699b7e7d3a.bindPopup(popup_b3a6ca9ebca1d2ee3edaca716a9ba81e)
+        ;
+
+        
+    
+    
+            var marker_ce0edba83a81e49450762f5fe9f2e8e0 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_fb87817f0e4bca9eea5f8095db8b89bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce0edba83a81e49450762f5fe9f2e8e0.setIcon(icon_fb87817f0e4bca9eea5f8095db8b89bf);
+        
+    
+        var popup_b1815439c3307df1871a05ccecb60f45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db65572399e0dbfe4921f96fb6d98c9c = $(`<div id="html_db65572399e0dbfe4921f96fb6d98c9c" style="width: 100.0%; height: 100.0%;">Destination: Paris&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 15.261360946745588°C&lt;br&gt;Humidity: 77.33727810650888%</div>`)[0];
+                popup_b1815439c3307df1871a05ccecb60f45.setContent(html_db65572399e0dbfe4921f96fb6d98c9c);
+            
+        
+
+        marker_ce0edba83a81e49450762f5fe9f2e8e0.bindPopup(popup_b1815439c3307df1871a05ccecb60f45)
+        ;
+
+        
+    
+    
+            var marker_be7936bcd5de1cee2ccab9177c444049 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_f10e1a0103d4a17a09fd2c48cd1772f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be7936bcd5de1cee2ccab9177c444049.setIcon(icon_f10e1a0103d4a17a09fd2c48cd1772f0);
+        
+    
+        var popup_d270493613018f806fd585efe76729fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6916c0f7ae523d557909d2d2907de656 = $(`<div id="html_6916c0f7ae523d557909d2d2907de656" style="width: 100.0%; height: 100.0%;">Destination: Paris&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 15.261360946745588°C&lt;br&gt;Humidity: 77.33727810650888%</div>`)[0];
+                popup_d270493613018f806fd585efe76729fd.setContent(html_6916c0f7ae523d557909d2d2907de656);
+            
+        
+
+        marker_be7936bcd5de1cee2ccab9177c444049.bindPopup(popup_d270493613018f806fd585efe76729fd)
+        ;
+
+        
+    
+    
+            var marker_344247dd884efda25df21d7cb5e484d6 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_6514e2a6dae557cac97bcf4af7fffaea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_344247dd884efda25df21d7cb5e484d6.setIcon(icon_6514e2a6dae557cac97bcf4af7fffaea);
+        
+    
+        var popup_0c47d04a6a16e9a1b2338cf11174f82b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8628ba736f45d9ab2284f6588b3a8c0c = $(`<div id="html_8628ba736f45d9ab2284f6588b3a8c0c" style="width: 100.0%; height: 100.0%;">Destination: Paris&lt;br&gt;Month: 2023-03&lt;br&gt;Temperature: 4.955502958579907°C&lt;br&gt;Humidity: 73.66272189349112%</div>`)[0];
+                popup_0c47d04a6a16e9a1b2338cf11174f82b.setContent(html_8628ba736f45d9ab2284f6588b3a8c0c);
+            
+        
+
+        marker_344247dd884efda25df21d7cb5e484d6.bindPopup(popup_0c47d04a6a16e9a1b2338cf11174f82b)
+        ;
+
+        
+    
+    
+            var marker_45cdc56e2890e2a374e483c0a85b8605 = L.marker(
+                [-33.8688, 151.2093],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_647abd5f05e2a8eab4838e9fbf75eaa5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_45cdc56e2890e2a374e483c0a85b8605.setIcon(icon_647abd5f05e2a8eab4838e9fbf75eaa5);
+        
+    
+        var popup_f1c27dab37d7088546122f106b143c0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c00feeb74559ee333e9d8bab6c7a39bf = $(`<div id="html_c00feeb74559ee333e9d8bab6c7a39bf" style="width: 100.0%; height: 100.0%;">Destination: Sydney&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 18.33035502958582°C&lt;br&gt;Humidity: 72.47928994082841%</div>`)[0];
+                popup_f1c27dab37d7088546122f106b143c0d.setContent(html_c00feeb74559ee333e9d8bab6c7a39bf);
+            
+        
+
+        marker_45cdc56e2890e2a374e483c0a85b8605.bindPopup(popup_f1c27dab37d7088546122f106b143c0d)
+        ;
+
+        
+    
+    
+            var marker_5b039dbf93d194ffec1a44dbebe86bb6 = L.marker(
+                [-33.8688, 151.2093],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_1aaa678012525c0b34221f3e7d3e40e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5b039dbf93d194ffec1a44dbebe86bb6.setIcon(icon_1aaa678012525c0b34221f3e7d3e40e2);
+        
+    
+        var popup_e4ee21e69b1edffb6fd1b51926a0d006 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_582e42263b5b9e0dd991a03dc685b1a8 = $(`<div id="html_582e42263b5b9e0dd991a03dc685b1a8" style="width: 100.0%; height: 100.0%;">Destination: Sydney&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 18.33035502958582°C&lt;br&gt;Humidity: 72.47928994082841%</div>`)[0];
+                popup_e4ee21e69b1edffb6fd1b51926a0d006.setContent(html_582e42263b5b9e0dd991a03dc685b1a8);
+            
+        
+
+        marker_5b039dbf93d194ffec1a44dbebe86bb6.bindPopup(popup_e4ee21e69b1edffb6fd1b51926a0d006)
+        ;
+
+        
+    
+    
+            var marker_a0bc1a8fabf858ecdc9938e17b33d1f4 = L.marker(
+                [-33.8688, 151.2093],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_2ace0adfc4ba74f1918799c995b397c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a0bc1a8fabf858ecdc9938e17b33d1f4.setIcon(icon_2ace0adfc4ba74f1918799c995b397c4);
+        
+    
+        var popup_ba078bb03e7085ccf670c04bbeaef1d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43cd70039e3af15d9fd7d23020fa6da7 = $(`<div id="html_43cd70039e3af15d9fd7d23020fa6da7" style="width: 100.0%; height: 100.0%;">Destination: Sydney&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 18.33035502958582°C&lt;br&gt;Humidity: 72.47928994082841%</div>`)[0];
+                popup_ba078bb03e7085ccf670c04bbeaef1d0.setContent(html_43cd70039e3af15d9fd7d23020fa6da7);
+            
+        
+
+        marker_a0bc1a8fabf858ecdc9938e17b33d1f4.bindPopup(popup_ba078bb03e7085ccf670c04bbeaef1d0)
+        ;
+
+        
+    
+    
+            var marker_8c58855c90432e12cec0f6f8d9013cdf = L.marker(
+                [-33.8688, 151.2093],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_24ff71f66b5a37f1e88e033cce42c9aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8c58855c90432e12cec0f6f8d9013cdf.setIcon(icon_24ff71f66b5a37f1e88e033cce42c9aa);
+        
+    
+        var popup_04667a1a3766c1f8a829a67490695661 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54d65aace3933afa47a640edd3d91dd4 = $(`<div id="html_54d65aace3933afa47a640edd3d91dd4" style="width: 100.0%; height: 100.0%;">Destination: Sydney&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 18.33035502958582°C&lt;br&gt;Humidity: 72.47928994082841%</div>`)[0];
+                popup_04667a1a3766c1f8a829a67490695661.setContent(html_54d65aace3933afa47a640edd3d91dd4);
+            
+        
+
+        marker_8c58855c90432e12cec0f6f8d9013cdf.bindPopup(popup_04667a1a3766c1f8a829a67490695661)
+        ;
+
+        
+    
+    
+            var marker_9edc5e8e5609c29d74d6f9305fb890ff = L.marker(
+                [-33.8688, 151.2093],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_f2178b6f70766bba0cf3c6ea921e726b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9edc5e8e5609c29d74d6f9305fb890ff.setIcon(icon_f2178b6f70766bba0cf3c6ea921e726b);
+        
+    
+        var popup_94ec4dffe808a67677877c958bc9bafe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_152e020f52314da81324dfbedb0c9659 = $(`<div id="html_152e020f52314da81324dfbedb0c9659" style="width: 100.0%; height: 100.0%;">Destination: Sydney&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 18.33035502958582°C&lt;br&gt;Humidity: 72.47928994082841%</div>`)[0];
+                popup_94ec4dffe808a67677877c958bc9bafe.setContent(html_152e020f52314da81324dfbedb0c9659);
+            
+        
+
+        marker_9edc5e8e5609c29d74d6f9305fb890ff.bindPopup(popup_94ec4dffe808a67677877c958bc9bafe)
+        ;
+
+        
+    
+    
+            var marker_16ea575bfac2c3a25dea94cd76421362 = L.marker(
+                [-33.8688, 151.2093],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_7bccf9f533e8bd83168dab086e4b18ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_16ea575bfac2c3a25dea94cd76421362.setIcon(icon_7bccf9f533e8bd83168dab086e4b18ea);
+        
+    
+        var popup_2b553b5614a9c28f7002a058b91ab2b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d04cdb0415ccfa2962e45703edc8249 = $(`<div id="html_1d04cdb0415ccfa2962e45703edc8249" style="width: 100.0%; height: 100.0%;">Destination: Sydney&lt;br&gt;Month: 2023-01&lt;br&gt;Temperature: 20.19230769230771°C&lt;br&gt;Humidity: 78.83431952662721%</div>`)[0];
+                popup_2b553b5614a9c28f7002a058b91ab2b1.setContent(html_1d04cdb0415ccfa2962e45703edc8249);
+            
+        
+
+        marker_16ea575bfac2c3a25dea94cd76421362.bindPopup(popup_2b553b5614a9c28f7002a058b91ab2b1)
+        ;
+
+        
+    
+    
+            var marker_5e58d9b04670a1a3f6b9b8b9075097a0 = L.marker(
+                [-33.8688, 151.2093],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_84a8cb1a764b8e8bea67afb2e5a52c57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5e58d9b04670a1a3f6b9b8b9075097a0.setIcon(icon_84a8cb1a764b8e8bea67afb2e5a52c57);
+        
+    
+        var popup_1c92cf97b5c272152e4da174335eb9a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_260750ef6c0afed0334410f70701bff3 = $(`<div id="html_260750ef6c0afed0334410f70701bff3" style="width: 100.0%; height: 100.0%;">Destination: Sydney&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 15.52035502958582°C&lt;br&gt;Humidity: 80.19526627218934%</div>`)[0];
+                popup_1c92cf97b5c272152e4da174335eb9a6.setContent(html_260750ef6c0afed0334410f70701bff3);
+            
+        
+
+        marker_5e58d9b04670a1a3f6b9b8b9075097a0.bindPopup(popup_1c92cf97b5c272152e4da174335eb9a6)
+        ;
+
+        
+    
+    
+            var marker_1eb6711846fe3c31a557eb4c487f30cb = L.marker(
+                [-33.8688, 151.2093],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_f004ea398bbc9e591a8cf1d034929c76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1eb6711846fe3c31a557eb4c487f30cb.setIcon(icon_f004ea398bbc9e591a8cf1d034929c76);
+        
+    
+        var popup_654b0b4a4032b8f0dab4b58b9e49eb29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fbff4ada8488a5f67d47a8141f75f0c = $(`<div id="html_9fbff4ada8488a5f67d47a8141f75f0c" style="width: 100.0%; height: 100.0%;">Destination: Sydney&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 15.52035502958582°C&lt;br&gt;Humidity: 80.19526627218934%</div>`)[0];
+                popup_654b0b4a4032b8f0dab4b58b9e49eb29.setContent(html_9fbff4ada8488a5f67d47a8141f75f0c);
+            
+        
+
+        marker_1eb6711846fe3c31a557eb4c487f30cb.bindPopup(popup_654b0b4a4032b8f0dab4b58b9e49eb29)
+        ;
+
+        
+    
+    
+            var marker_4d3999af029bad91ffad984945da125e = L.marker(
+                [-33.8688, 151.2093],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_5173eedf4642fd7ac8f39979ce536e37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d3999af029bad91ffad984945da125e.setIcon(icon_5173eedf4642fd7ac8f39979ce536e37);
+        
+    
+        var popup_58e03c92c0e69925be4fc5fcb9b61d34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_239d36cc64e623551204943e8a60e841 = $(`<div id="html_239d36cc64e623551204943e8a60e841" style="width: 100.0%; height: 100.0%;">Destination: Sydney&lt;br&gt;Month: 2023-02&lt;br&gt;Temperature: 23.44266272189351°C&lt;br&gt;Humidity: 62.97041420118343%</div>`)[0];
+                popup_58e03c92c0e69925be4fc5fcb9b61d34.setContent(html_239d36cc64e623551204943e8a60e841);
+            
+        
+
+        marker_4d3999af029bad91ffad984945da125e.bindPopup(popup_58e03c92c0e69925be4fc5fcb9b61d34)
+        ;
+
+        
+    
+    
+            var marker_a5cd065cfe1dd64dba82ca391d6a8db0 = L.marker(
+                [-33.8688, 151.2093],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_d18921fe3de306a8fdfc8ef5c94aa115 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a5cd065cfe1dd64dba82ca391d6a8db0.setIcon(icon_d18921fe3de306a8fdfc8ef5c94aa115);
+        
+    
+        var popup_ad20e5b63071989508cd72ac1d76d39f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70366f74650530c7e22a243daf8f0399 = $(`<div id="html_70366f74650530c7e22a243daf8f0399" style="width: 100.0%; height: 100.0%;">Destination: Sydney&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 15.60100591715978°C&lt;br&gt;Humidity: 67.40236686390533%</div>`)[0];
+                popup_ad20e5b63071989508cd72ac1d76d39f.setContent(html_70366f74650530c7e22a243daf8f0399);
+            
+        
+
+        marker_a5cd065cfe1dd64dba82ca391d6a8db0.bindPopup(popup_ad20e5b63071989508cd72ac1d76d39f)
+        ;
+
+        
+    
+    
+            var marker_68752a512e1145ec85e750f6676ca332 = L.marker(
+                [-33.8688, 151.2093],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_91eb38b1d7ca820de409e48b072e33b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_68752a512e1145ec85e750f6676ca332.setIcon(icon_91eb38b1d7ca820de409e48b072e33b8);
+        
+    
+        var popup_8d0cdc64074deb6f1ed3f7bc52b79f30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f4713832fb0ed6b850e588fb863d2a1 = $(`<div id="html_3f4713832fb0ed6b850e588fb863d2a1" style="width: 100.0%; height: 100.0%;">Destination: Sydney&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 13.022366863905344°C&lt;br&gt;Humidity: 72.18934911242603%</div>`)[0];
+                popup_8d0cdc64074deb6f1ed3f7bc52b79f30.setContent(html_3f4713832fb0ed6b850e588fb863d2a1);
+            
+        
+
+        marker_68752a512e1145ec85e750f6676ca332.bindPopup(popup_8d0cdc64074deb6f1ed3f7bc52b79f30)
+        ;
+
+        
+    
+    
+            var marker_6a2d1eea756e011e22989ccc64ae12c9 = L.marker(
+                [-33.8688, 151.2093],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_c8958bb7e2d3072ef6ae415a58e93da8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a2d1eea756e011e22989ccc64ae12c9.setIcon(icon_c8958bb7e2d3072ef6ae415a58e93da8);
+        
+    
+        var popup_90091a3541a9598646236dacda50567b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aef32655fcb382f3e3d80042b20fb2de = $(`<div id="html_aef32655fcb382f3e3d80042b20fb2de" style="width: 100.0%; height: 100.0%;">Destination: Sydney&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 14.827159763313636°C&lt;br&gt;Humidity: 62.61538461538461%</div>`)[0];
+                popup_90091a3541a9598646236dacda50567b.setContent(html_aef32655fcb382f3e3d80042b20fb2de);
+            
+        
+
+        marker_6a2d1eea756e011e22989ccc64ae12c9.bindPopup(popup_90091a3541a9598646236dacda50567b)
+        ;
+
+        
+    
+    
+            var marker_a1822f37257880cd960ac8c2044a3e25 = L.marker(
+                [-22.9068, -43.1729],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_c03c37a69e000c5f70841c8bca875cf4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a1822f37257880cd960ac8c2044a3e25.setIcon(icon_c03c37a69e000c5f70841c8bca875cf4);
+        
+    
+        var popup_33e047f0671effac59407c7fd29d0e82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc306a34be149841d3c3ebf7721ceede = $(`<div id="html_bc306a34be149841d3c3ebf7721ceede" style="width: 100.0%; height: 100.0%;">Destination: Rio de Janeiro&lt;br&gt;Month: 2023-01&lt;br&gt;Temperature: 24.65763313609468°C&lt;br&gt;Humidity: 91.81656804733728%</div>`)[0];
+                popup_33e047f0671effac59407c7fd29d0e82.setContent(html_bc306a34be149841d3c3ebf7721ceede);
+            
+        
+
+        marker_a1822f37257880cd960ac8c2044a3e25.bindPopup(popup_33e047f0671effac59407c7fd29d0e82)
+        ;
+
+        
+    
+    
+            var marker_fb147b3cb11119cca487c1b0007c2ff0 = L.marker(
+                [-22.9068, -43.1729],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_da45113461278c816bbea731c3aaae59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fb147b3cb11119cca487c1b0007c2ff0.setIcon(icon_da45113461278c816bbea731c3aaae59);
+        
+    
+        var popup_fb8cdfe0b9ed92c62fc7f4fbb8322f41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1c159ba517702008a02ba1c9a6ceaff = $(`<div id="html_f1c159ba517702008a02ba1c9a6ceaff" style="width: 100.0%; height: 100.0%;">Destination: Rio de Janeiro&lt;br&gt;Month: 2023-01&lt;br&gt;Temperature: 24.65763313609468°C&lt;br&gt;Humidity: 91.81656804733728%</div>`)[0];
+                popup_fb8cdfe0b9ed92c62fc7f4fbb8322f41.setContent(html_f1c159ba517702008a02ba1c9a6ceaff);
+            
+        
+
+        marker_fb147b3cb11119cca487c1b0007c2ff0.bindPopup(popup_fb8cdfe0b9ed92c62fc7f4fbb8322f41)
+        ;
+
+        
+    
+    
+            var marker_b28f08c42c5a2222382e62a02b67d71e = L.marker(
+                [-22.9068, -43.1729],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_32d6f4ea742838844fb93d6b5f85eaed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b28f08c42c5a2222382e62a02b67d71e.setIcon(icon_32d6f4ea742838844fb93d6b5f85eaed);
+        
+    
+        var popup_2758fa62158aa23019df442710ee8f13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2eee98c2aeb3ba034f2362a3e7f1d319 = $(`<div id="html_2eee98c2aeb3ba034f2362a3e7f1d319" style="width: 100.0%; height: 100.0%;">Destination: Rio de Janeiro&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 23.52366863905329°C&lt;br&gt;Humidity: 68.49704142011835%</div>`)[0];
+                popup_2758fa62158aa23019df442710ee8f13.setContent(html_2eee98c2aeb3ba034f2362a3e7f1d319);
+            
+        
+
+        marker_b28f08c42c5a2222382e62a02b67d71e.bindPopup(popup_2758fa62158aa23019df442710ee8f13)
+        ;
+
+        
+    
+    
+            var marker_541881968553fc4a9ea7d36d6384ae19 = L.marker(
+                [-22.9068, -43.1729],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_19211bcefc045b20000c960c04b0598d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_541881968553fc4a9ea7d36d6384ae19.setIcon(icon_19211bcefc045b20000c960c04b0598d);
+        
+    
+        var popup_2d8594f094f9c749f7e5794fa242f898 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1b95a52405f2d910d047648d19db0df = $(`<div id="html_e1b95a52405f2d910d047648d19db0df" style="width: 100.0%; height: 100.0%;">Destination: Rio de Janeiro&lt;br&gt;Month: 2023-04&lt;br&gt;Temperature: 25.08065088757398°C&lt;br&gt;Humidity: 95.18343195266272%</div>`)[0];
+                popup_2d8594f094f9c749f7e5794fa242f898.setContent(html_e1b95a52405f2d910d047648d19db0df);
+            
+        
+
+        marker_541881968553fc4a9ea7d36d6384ae19.bindPopup(popup_2d8594f094f9c749f7e5794fa242f898)
+        ;
+
+        
+    
+    
+            var marker_400efdb1e5e9f35255ee2452d2bac51e = L.marker(
+                [-22.9068, -43.1729],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_d3023c7c48a6bb4f95e92efedc9f4322 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_400efdb1e5e9f35255ee2452d2bac51e.setIcon(icon_d3023c7c48a6bb4f95e92efedc9f4322);
+        
+    
+        var popup_97d1a05f461544da2bfd6be9ed38cb75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0a7dd8cca102933befad8e4d8e75efe = $(`<div id="html_b0a7dd8cca102933befad8e4d8e75efe" style="width: 100.0%; height: 100.0%;">Destination: Rio de Janeiro&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 22.02272189349115°C&lt;br&gt;Humidity: 72.28994082840237%</div>`)[0];
+                popup_97d1a05f461544da2bfd6be9ed38cb75.setContent(html_b0a7dd8cca102933befad8e4d8e75efe);
+            
+        
+
+        marker_400efdb1e5e9f35255ee2452d2bac51e.bindPopup(popup_97d1a05f461544da2bfd6be9ed38cb75)
+        ;
+
+        
+    
+    
+            var marker_f051a4f3bd8edef8f20eeadfd5786144 = L.marker(
+                [52.3676, 4.9041],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_41a551c6ddbf9ded8360e8b0c29665e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f051a4f3bd8edef8f20eeadfd5786144.setIcon(icon_41a551c6ddbf9ded8360e8b0c29665e8);
+        
+    
+        var popup_d3d9f5e2fb5e85b52d02a6512dc5ed00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5022f8b1ac5c19bec26b302f496e75e = $(`<div id="html_e5022f8b1ac5c19bec26b302f496e75e" style="width: 100.0%; height: 100.0%;">Destination: Amsterdam&lt;br&gt;Month: 2023-02&lt;br&gt;Temperature: 6.0208875739645205°C&lt;br&gt;Humidity: 88.40236686390533%</div>`)[0];
+                popup_d3d9f5e2fb5e85b52d02a6512dc5ed00.setContent(html_e5022f8b1ac5c19bec26b302f496e75e);
+            
+        
+
+        marker_f051a4f3bd8edef8f20eeadfd5786144.bindPopup(popup_d3d9f5e2fb5e85b52d02a6512dc5ed00)
+        ;
+
+        
+    
+    
+            var marker_fd548a9e95977a719bf4c65b177e2902 = L.marker(
+                [52.3676, 4.9041],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_f57b9a09700bc4d8f8234d4bbed8a7d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd548a9e95977a719bf4c65b177e2902.setIcon(icon_f57b9a09700bc4d8f8234d4bbed8a7d8);
+        
+    
+        var popup_95ab194a1f4d021478356c22c6874c66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38f0f67f80d61165b461889273e3a9b8 = $(`<div id="html_38f0f67f80d61165b461889273e3a9b8" style="width: 100.0%; height: 100.0%;">Destination: Amsterdam&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 14.716568047337311°C&lt;br&gt;Humidity: 74.44378698224853%</div>`)[0];
+                popup_95ab194a1f4d021478356c22c6874c66.setContent(html_38f0f67f80d61165b461889273e3a9b8);
+            
+        
+
+        marker_fd548a9e95977a719bf4c65b177e2902.bindPopup(popup_95ab194a1f4d021478356c22c6874c66)
+        ;
+
+        
+    
+    
+            var marker_b4d35069ab7428559d26f0bb6bd13533 = L.marker(
+                [52.3676, 4.9041],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_dcc39bba9e71c02333f793d3e7364da3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b4d35069ab7428559d26f0bb6bd13533.setIcon(icon_dcc39bba9e71c02333f793d3e7364da3);
+        
+    
+        var popup_10bd5dff0707415a6483fe062ac65c5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47265ec3286bbd8257a2021dd51dd919 = $(`<div id="html_47265ec3286bbd8257a2021dd51dd919" style="width: 100.0%; height: 100.0%;">Destination: Amsterdam&lt;br&gt;Month: 2023-10&lt;br&gt;Temperature: 17.168284023668665°C&lt;br&gt;Humidity: 78.05325443786982%</div>`)[0];
+                popup_10bd5dff0707415a6483fe062ac65c5a.setContent(html_47265ec3286bbd8257a2021dd51dd919);
+            
+        
+
+        marker_b4d35069ab7428559d26f0bb6bd13533.bindPopup(popup_10bd5dff0707415a6483fe062ac65c5a)
+        ;
+
+        
+    
+    
+            var marker_cfb284c2b7582fa974150d6da3d25f74 = L.marker(
+                [25.276987, 55.296249],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_0fdc987abda904cf3d5ddbc38f1e21c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cfb284c2b7582fa974150d6da3d25f74.setIcon(icon_0fdc987abda904cf3d5ddbc38f1e21c9);
+        
+    
+        var popup_41f295e1d8f18801308189f98720cff6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dab9c9b44317c5b73ba906bd2a49fab = $(`<div id="html_5dab9c9b44317c5b73ba906bd2a49fab" style="width: 100.0%; height: 100.0%;">Destination: Dubai&lt;br&gt;Month: 2023-03&lt;br&gt;Temperature: 23.56053254437872°C&lt;br&gt;Humidity: 62.6094674556213%</div>`)[0];
+                popup_41f295e1d8f18801308189f98720cff6.setContent(html_5dab9c9b44317c5b73ba906bd2a49fab);
+            
+        
+
+        marker_cfb284c2b7582fa974150d6da3d25f74.bindPopup(popup_41f295e1d8f18801308189f98720cff6)
+        ;
+
+        
+    
+    
+            var marker_9382655a93d92fe09576fd4938f37dda = L.marker(
+                [25.276987, 55.296249],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_5cb1c392a97546bfc57abe772a24f0fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9382655a93d92fe09576fd4938f37dda.setIcon(icon_5cb1c392a97546bfc57abe772a24f0fa);
+        
+    
+        var popup_63670d661880402866f62bb6f4289fb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1664f72848e2c289073ee3a4d331f39d = $(`<div id="html_1664f72848e2c289073ee3a4d331f39d" style="width: 100.0%; height: 100.0%;">Destination: Dubai&lt;br&gt;Month: 2023-01&lt;br&gt;Temperature: 22.0638461538462°C&lt;br&gt;Humidity: 57.20118343195266%</div>`)[0];
+                popup_63670d661880402866f62bb6f4289fb7.setContent(html_1664f72848e2c289073ee3a4d331f39d);
+            
+        
+
+        marker_9382655a93d92fe09576fd4938f37dda.bindPopup(popup_63670d661880402866f62bb6f4289fb7)
+        ;
+
+        
+    
+    
+            var marker_3a0f13baec553e225eac2ec4a9996b81 = L.marker(
+                [25.276987, 55.296249],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_1a85af7a244edc58094ce50ac902d2f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3a0f13baec553e225eac2ec4a9996b81.setIcon(icon_1a85af7a244edc58094ce50ac902d2f9);
+        
+    
+        var popup_860b41baa79c3bed509417a69d9b9cdc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8456e6470970f595554adefc41696602 = $(`<div id="html_8456e6470970f595554adefc41696602" style="width: 100.0%; height: 100.0%;">Destination: Dubai&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 35.67982248520713°C&lt;br&gt;Humidity: 57.0887573964497%</div>`)[0];
+                popup_860b41baa79c3bed509417a69d9b9cdc.setContent(html_8456e6470970f595554adefc41696602);
+            
+        
+
+        marker_3a0f13baec553e225eac2ec4a9996b81.bindPopup(popup_860b41baa79c3bed509417a69d9b9cdc)
+        ;
+
+        
+    
+    
+            var marker_a0543ce85df7637b50896c9eba8517a4 = L.marker(
+                [21.1619, -86.8515],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_6bfc9e3627ac8f4d57621586788f60b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a0543ce85df7637b50896c9eba8517a4.setIcon(icon_6bfc9e3627ac8f4d57621586788f60b9);
+        
+    
+        var popup_a17c2bd89a243b6f69b0321a9c9608d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ceb0b2697fa0f3cf9afbbb69287e24c8 = $(`<div id="html_ceb0b2697fa0f3cf9afbbb69287e24c8" style="width: 100.0%; height: 100.0%;">Destination: Cancun&lt;br&gt;Month: 2023-04&lt;br&gt;Temperature: 26.437100591716°C&lt;br&gt;Humidity: 75.18934911242603%</div>`)[0];
+                popup_a17c2bd89a243b6f69b0321a9c9608d5.setContent(html_ceb0b2697fa0f3cf9afbbb69287e24c8);
+            
+        
+
+        marker_a0543ce85df7637b50896c9eba8517a4.bindPopup(popup_a17c2bd89a243b6f69b0321a9c9608d5)
+        ;
+
+        
+    
+    
+            var marker_968db8705b89bc29deef44a599a9ca2b = L.marker(
+                [21.1619, -86.8515],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_50b62c929bbcb9d4c837be459572875a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_968db8705b89bc29deef44a599a9ca2b.setIcon(icon_50b62c929bbcb9d4c837be459572875a);
+        
+    
+        var popup_c1308177bb5c7629a2e8fd464bdaa379 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e418a65ff2658ba9439cf78082063c6b = $(`<div id="html_e418a65ff2658ba9439cf78082063c6b" style="width: 100.0%; height: 100.0%;">Destination: Cancun&lt;br&gt;Month: 2023-04&lt;br&gt;Temperature: 26.437100591716°C&lt;br&gt;Humidity: 75.18934911242603%</div>`)[0];
+                popup_c1308177bb5c7629a2e8fd464bdaa379.setContent(html_e418a65ff2658ba9439cf78082063c6b);
+            
+        
+
+        marker_968db8705b89bc29deef44a599a9ca2b.bindPopup(popup_c1308177bb5c7629a2e8fd464bdaa379)
+        ;
+
+        
+    
+    
+            var marker_6bd61eccb94fd6a37dcbc83e09b20890 = L.marker(
+                [21.1619, -86.8515],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_0bbfea29645d67e6dc35da67dbc4f1dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6bd61eccb94fd6a37dcbc83e09b20890.setIcon(icon_0bbfea29645d67e6dc35da67dbc4f1dd);
+        
+    
+        var popup_37e3ac306024435812099f3097fde0ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f261d15be0a7ec87104fe1b305d3c691 = $(`<div id="html_f261d15be0a7ec87104fe1b305d3c691" style="width: 100.0%; height: 100.0%;">Destination: Cancun&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 28.844260355029647°C&lt;br&gt;Humidity: 79.17159763313609%</div>`)[0];
+                popup_37e3ac306024435812099f3097fde0ac.setContent(html_f261d15be0a7ec87104fe1b305d3c691);
+            
+        
+
+        marker_6bd61eccb94fd6a37dcbc83e09b20890.bindPopup(popup_37e3ac306024435812099f3097fde0ac)
+        ;
+
+        
+    
+    
+            var marker_aebe24f3324bd115b5d3cae13664d8c9 = L.marker(
+                [21.1619, -86.8515],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_a4ede6b91e3d6cdac25ac00cd1f7a075 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aebe24f3324bd115b5d3cae13664d8c9.setIcon(icon_a4ede6b91e3d6cdac25ac00cd1f7a075);
+        
+    
+        var popup_81e24a1c9ce9ac40f8bf89ee449f680f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8454132fa4f74affc7e2ba92da972209 = $(`<div id="html_8454132fa4f74affc7e2ba92da972209" style="width: 100.0%; height: 100.0%;">Destination: Cancun&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 29.53467455621306°C&lt;br&gt;Humidity: 75.05325443786982%</div>`)[0];
+                popup_81e24a1c9ce9ac40f8bf89ee449f680f.setContent(html_8454132fa4f74affc7e2ba92da972209);
+            
+        
+
+        marker_aebe24f3324bd115b5d3cae13664d8c9.bindPopup(popup_81e24a1c9ce9ac40f8bf89ee449f680f)
+        ;
+
+        
+    
+    
+            var marker_fad58c9fcd1445c8d8593c9887a1e82e = L.marker(
+                [41.3851, 2.1734],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_ae95fd587181cc7659ec0f7967958e30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fad58c9fcd1445c8d8593c9887a1e82e.setIcon(icon_ae95fd587181cc7659ec0f7967958e30);
+        
+    
+        var popup_234c49af929455fc959729b35eeb1420 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_505a9b322b77e8d1d1cea080cda88682 = $(`<div id="html_505a9b322b77e8d1d1cea080cda88682" style="width: 100.0%; height: 100.0%;">Destination: Barcelona&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 19.07899408284026°C&lt;br&gt;Humidity: 76.07100591715977%</div>`)[0];
+                popup_234c49af929455fc959729b35eeb1420.setContent(html_505a9b322b77e8d1d1cea080cda88682);
+            
+        
+
+        marker_fad58c9fcd1445c8d8593c9887a1e82e.bindPopup(popup_234c49af929455fc959729b35eeb1420)
+        ;
+
+        
+    
+    
+            var marker_68a3f02ab53c8ea48f5a829564a2ad2a = L.marker(
+                [41.3851, 2.1734],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_a2b19b5fb79444556ebbe4725099f172 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_68a3f02ab53c8ea48f5a829564a2ad2a.setIcon(icon_a2b19b5fb79444556ebbe4725099f172);
+        
+    
+        var popup_c7fe7ef4d078f38810bb9b68255b3672 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46a4e769dd47c9d313b7166966b9173d = $(`<div id="html_46a4e769dd47c9d313b7166966b9173d" style="width: 100.0%; height: 100.0%;">Destination: Barcelona&lt;br&gt;Month: 2023-10&lt;br&gt;Temperature: 23.505325443787°C&lt;br&gt;Humidity: 78.77514792899409%</div>`)[0];
+                popup_c7fe7ef4d078f38810bb9b68255b3672.setContent(html_46a4e769dd47c9d313b7166966b9173d);
+            
+        
+
+        marker_68a3f02ab53c8ea48f5a829564a2ad2a.bindPopup(popup_c7fe7ef4d078f38810bb9b68255b3672)
+        ;
+
+        
+    
+    
+            var marker_8d89ffcc06d2debdb204342124f6387b = L.marker(
+                [41.3851, 2.1734],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_3286af3c6cf771f97b192cd11c7038db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8d89ffcc06d2debdb204342124f6387b.setIcon(icon_3286af3c6cf771f97b192cd11c7038db);
+        
+    
+        var popup_ac5ae027f4f46d12886bca439efef196 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79362e3b41ce1fc56ee580b66464c207 = $(`<div id="html_79362e3b41ce1fc56ee580b66464c207" style="width: 100.0%; height: 100.0%;">Destination: Barcelona&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 25.26828402366868°C&lt;br&gt;Humidity: 70.30177514792899%</div>`)[0];
+                popup_ac5ae027f4f46d12886bca439efef196.setContent(html_79362e3b41ce1fc56ee580b66464c207);
+            
+        
+
+        marker_8d89ffcc06d2debdb204342124f6387b.bindPopup(popup_ac5ae027f4f46d12886bca439efef196)
+        ;
+
+        
+    
+    
+            var marker_5683f5f58604c6b01edf22904db64a63 = L.marker(
+                [41.3851, 2.1734],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_35c988f76a0055eb1a9b7863b8ca8074 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5683f5f58604c6b01edf22904db64a63.setIcon(icon_35c988f76a0055eb1a9b7863b8ca8074);
+        
+    
+        var popup_fef745e34d163ead9958f39e165c690e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4956f4cc663e014bde6a1a851824f740 = $(`<div id="html_4956f4cc663e014bde6a1a851824f740" style="width: 100.0%; height: 100.0%;">Destination: Barcelona&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 25.26828402366868°C&lt;br&gt;Humidity: 70.30177514792899%</div>`)[0];
+                popup_fef745e34d163ead9958f39e165c690e.setContent(html_4956f4cc663e014bde6a1a851824f740);
+            
+        
+
+        marker_5683f5f58604c6b01edf22904db64a63.bindPopup(popup_fef745e34d163ead9958f39e165c690e)
+        ;
+
+        
+    
+    
+            var marker_382c30042a7f65c59f5cad4f99b96349 = L.marker(
+                [41.3851, 2.1734],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_fb7918a5ebe32075cb1e7330efc520a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_382c30042a7f65c59f5cad4f99b96349.setIcon(icon_fb7918a5ebe32075cb1e7330efc520a9);
+        
+    
+        var popup_1854256d81e1ca0bbcd84f354dc9e5f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d52c56cda7f17afd8c6641a843de330 = $(`<div id="html_6d52c56cda7f17afd8c6641a843de330" style="width: 100.0%; height: 100.0%;">Destination: Barcelona&lt;br&gt;Month: 2023-04&lt;br&gt;Temperature: 14.14863905325446°C&lt;br&gt;Humidity: 67.09467455621302%</div>`)[0];
+                popup_1854256d81e1ca0bbcd84f354dc9e5f1.setContent(html_6d52c56cda7f17afd8c6641a843de330);
+            
+        
+
+        marker_382c30042a7f65c59f5cad4f99b96349.bindPopup(popup_1854256d81e1ca0bbcd84f354dc9e5f1)
+        ;
+
+        
+    
+    
+            var marker_4034d5acc8e1a9a6efc77d99a34aaacb = L.marker(
+                [41.3851, 2.1734],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_518d5c74716b26840c2b92dd6218ce07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4034d5acc8e1a9a6efc77d99a34aaacb.setIcon(icon_518d5c74716b26840c2b92dd6218ce07);
+        
+    
+        var popup_34a15b5775c9f8d4cb83e33c37f84c0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62dc4269f220d598eb8fbab746083a76 = $(`<div id="html_62dc4269f220d598eb8fbab746083a76" style="width: 100.0%; height: 100.0%;">Destination: Barcelona&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 25.437692307692327°C&lt;br&gt;Humidity: 66.0%</div>`)[0];
+                popup_34a15b5775c9f8d4cb83e33c37f84c0c.setContent(html_62dc4269f220d598eb8fbab746083a76);
+            
+        
+
+        marker_4034d5acc8e1a9a6efc77d99a34aaacb.bindPopup(popup_34a15b5775c9f8d4cb83e33c37f84c0c)
+        ;
+
+        
+    
+    
+            var marker_0d84fcd86919062787d11d688343b59e = L.marker(
+                [21.3069, -157.8583],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_b88258052bcc93e8cb5b163a1163f8f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0d84fcd86919062787d11d688343b59e.setIcon(icon_b88258052bcc93e8cb5b163a1163f8f5);
+        
+    
+        var popup_f354600804a602f5525fa292cb826208 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccefca1ab2dba8e3482ddab0519312c3 = $(`<div id="html_ccefca1ab2dba8e3482ddab0519312c3" style="width: 100.0%; height: 100.0%;">Destination: Honolulu&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 24.762426035503°C&lt;br&gt;Humidity: 75.82840236686391%</div>`)[0];
+                popup_f354600804a602f5525fa292cb826208.setContent(html_ccefca1ab2dba8e3482ddab0519312c3);
+            
+        
+
+        marker_0d84fcd86919062787d11d688343b59e.bindPopup(popup_f354600804a602f5525fa292cb826208)
+        ;
+
+        
+    
+    
+            var marker_53d68af46ec98bcc9d8181314b557821 = L.marker(
+                [52.52, 13.405],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_49a2b12f57500bc9f880a8eb5c092b94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_53d68af46ec98bcc9d8181314b557821.setIcon(icon_49a2b12f57500bc9f880a8eb5c092b94);
+        
+    
+        var popup_ca473727596bedf47680847a0a17a85e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a35578492fa5f8b557d29ab8190b462 = $(`<div id="html_1a35578492fa5f8b557d29ab8190b462" style="width: 100.0%; height: 100.0%;">Destination: Berlin&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 19.39467455621304°C&lt;br&gt;Humidity: 59.04733727810651%</div>`)[0];
+                popup_ca473727596bedf47680847a0a17a85e.setContent(html_1a35578492fa5f8b557d29ab8190b462);
+            
+        
+
+        marker_53d68af46ec98bcc9d8181314b557821.bindPopup(popup_ca473727596bedf47680847a0a17a85e)
+        ;
+
+        
+    
+    
+            var marker_6f2c59fe0bf9886e9566240e1bf0c641 = L.marker(
+                [31.6295, -7.9811],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_de9a04a6dbf252d258e5699e90a9894a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6f2c59fe0bf9886e9566240e1bf0c641.setIcon(icon_de9a04a6dbf252d258e5699e90a9894a);
+        
+    
+        var popup_54f9074b45e94ebfc92f4c91cbe6d9b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05546fe7b7ab449c33a1b3bbc241c648 = $(`<div id="html_05546fe7b7ab449c33a1b3bbc241c648" style="width: 100.0%; height: 100.0%;">Destination: Marrakech&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 29.164260355029555°C&lt;br&gt;Humidity: 48.34319526627219%</div>`)[0];
+                popup_54f9074b45e94ebfc92f4c91cbe6d9b0.setContent(html_05546fe7b7ab449c33a1b3bbc241c648);
+            
+        
+
+        marker_6f2c59fe0bf9886e9566240e1bf0c641.bindPopup(popup_54f9074b45e94ebfc92f4c91cbe6d9b0)
+        ;
+
+        
+    
+    
+            var marker_dc84668cb6da99d368589fdf00b37b0a = L.marker(
+                [55.9533, -3.1883],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_9301c427a8c175dcf45f124cde438fa2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dc84668cb6da99d368589fdf00b37b0a.setIcon(icon_9301c427a8c175dcf45f124cde438fa2);
+        
+    
+        var popup_2a8db82af61e4b77315805c33c589aa3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_734cfbb571ef41502020139eeeead61d = $(`<div id="html_734cfbb571ef41502020139eeeead61d" style="width: 100.0%; height: 100.0%;">Destination: Edinburgh&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 16.281775147929018°C&lt;br&gt;Humidity: 82.4733727810651%</div>`)[0];
+                popup_2a8db82af61e4b77315805c33c589aa3.setContent(html_734cfbb571ef41502020139eeeead61d);
+            
+        
+
+        marker_dc84668cb6da99d368589fdf00b37b0a.bindPopup(popup_2a8db82af61e4b77315805c33c589aa3)
+        ;
+
+        
+    
+    
+            var marker_1ee8a2ebabfab5719396d0e09ec1549f = L.marker(
+                [41.9028, 12.4964],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_be520d357ea272807e4a4d0da962fd0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1ee8a2ebabfab5719396d0e09ec1549f.setIcon(icon_be520d357ea272807e4a4d0da962fd0e);
+        
+    
+        var popup_9155d679008f81191aac8735cd2331e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53656848a8e865ee1d9105ace83a5c18 = $(`<div id="html_53656848a8e865ee1d9105ace83a5c18" style="width: 100.0%; height: 100.0%;">Destination: Rome&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 16.623491124260376°C&lt;br&gt;Humidity: 65.61538461538461%</div>`)[0];
+                popup_9155d679008f81191aac8735cd2331e7.setContent(html_53656848a8e865ee1d9105ace83a5c18);
+            
+        
+
+        marker_1ee8a2ebabfab5719396d0e09ec1549f.bindPopup(popup_9155d679008f81191aac8735cd2331e7)
+        ;
+
+        
+    
+    
+            var marker_d0d0b69f4a50c724dacc7f4757a02c49 = L.marker(
+                [41.9028, 12.4964],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_a8544e7132bd709ca97a09677d28b4a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d0d0b69f4a50c724dacc7f4757a02c49.setIcon(icon_a8544e7132bd709ca97a09677d28b4a3);
+        
+    
+        var popup_726c0ecc76a56cb4f543f12ece7848e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f47b9620c0f37e6833b34be967c375d0 = $(`<div id="html_f47b9620c0f37e6833b34be967c375d0" style="width: 100.0%; height: 100.0%;">Destination: Rome&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 25.481479289940854°C&lt;br&gt;Humidity: 59.25443786982248%</div>`)[0];
+                popup_726c0ecc76a56cb4f543f12ece7848e9.setContent(html_f47b9620c0f37e6833b34be967c375d0);
+            
+        
+
+        marker_d0d0b69f4a50c724dacc7f4757a02c49.bindPopup(popup_726c0ecc76a56cb4f543f12ece7848e9)
+        ;
+
+        
+    
+    
+            var marker_c74c313aa7868ba95231fce1660f4646 = L.marker(
+                [41.9028, 12.4964],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_e0f527a9933ddb1cef36fbf2a2a2f3b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c74c313aa7868ba95231fce1660f4646.setIcon(icon_e0f527a9933ddb1cef36fbf2a2a2f3b1);
+        
+    
+        var popup_f4409224fe0baf7463b0cd7b7d29a648 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af2490922feef9e8cc02d2cf88f32d57 = $(`<div id="html_af2490922feef9e8cc02d2cf88f32d57" style="width: 100.0%; height: 100.0%;">Destination: Rome&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 25.481479289940854°C&lt;br&gt;Humidity: 59.25443786982248%</div>`)[0];
+                popup_f4409224fe0baf7463b0cd7b7d29a648.setContent(html_af2490922feef9e8cc02d2cf88f32d57);
+            
+        
+
+        marker_c74c313aa7868ba95231fce1660f4646.bindPopup(popup_f4409224fe0baf7463b0cd7b7d29a648)
+        ;
+
+        
+    
+    
+            var marker_8f42c6cd90e365a31ea9619a239e5737 = L.marker(
+                [41.9028, 12.4964],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_3c60b61d6668f3c6a642fe11358b666b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8f42c6cd90e365a31ea9619a239e5737.setIcon(icon_3c60b61d6668f3c6a642fe11358b666b);
+        
+    
+        var popup_651da237bd75324be844a8aa49ed75e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08363d00196815c565620d4561a50aca = $(`<div id="html_08363d00196815c565620d4561a50aca" style="width: 100.0%; height: 100.0%;">Destination: Rome&lt;br&gt;Month: 2023-02&lt;br&gt;Temperature: 7.494792899408313°C&lt;br&gt;Humidity: 60.0414201183432%</div>`)[0];
+                popup_651da237bd75324be844a8aa49ed75e7.setContent(html_08363d00196815c565620d4561a50aca);
+            
+        
+
+        marker_8f42c6cd90e365a31ea9619a239e5737.bindPopup(popup_651da237bd75324be844a8aa49ed75e7)
+        ;
+
+        
+    
+    
+            var marker_0e74e6efde7fe88d7ff7a8e44f7adf1c = L.marker(
+                [41.9028, 12.4964],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_bd6e33292f33b3636a5e303037e34268 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0e74e6efde7fe88d7ff7a8e44f7adf1c.setIcon(icon_bd6e33292f33b3636a5e303037e34268);
+        
+    
+        var popup_32068caf3e5cbcfe4f4cfba79212e07e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5f6d6278c0129333a492d1e95657008 = $(`<div id="html_f5f6d6278c0129333a492d1e95657008" style="width: 100.0%; height: 100.0%;">Destination: Rome&lt;br&gt;Month: 2023-03&lt;br&gt;Temperature: 10.976686390532567°C&lt;br&gt;Humidity: 72.85798816568047%</div>`)[0];
+                popup_32068caf3e5cbcfe4f4cfba79212e07e.setContent(html_f5f6d6278c0129333a492d1e95657008);
+            
+        
+
+        marker_0e74e6efde7fe88d7ff7a8e44f7adf1c.bindPopup(popup_32068caf3e5cbcfe4f4cfba79212e07e)
+        ;
+
+        
+    
+    
+            var marker_2d335de35dba3c4d855ca01d21b71ff6 = L.marker(
+                [41.9028, 12.4964],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_fb6adc6a3f66d54e7eb328eb1f6ba0e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2d335de35dba3c4d855ca01d21b71ff6.setIcon(icon_fb6adc6a3f66d54e7eb328eb1f6ba0e6);
+        
+    
+        var popup_188fe42df4561812d78a5657e3c9df17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2866673a8f02a7b67b036170ccd0471f = $(`<div id="html_2866673a8f02a7b67b036170ccd0471f" style="width: 100.0%; height: 100.0%;">Destination: Rome&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 24.5667455621302°C&lt;br&gt;Humidity: 58.0414201183432%</div>`)[0];
+                popup_188fe42df4561812d78a5657e3c9df17.setContent(html_2866673a8f02a7b67b036170ccd0471f);
+            
+        
+
+        marker_2d335de35dba3c4d855ca01d21b71ff6.bindPopup(popup_188fe42df4561812d78a5657e3c9df17)
+        ;
+
+        
+    
+    
+            var marker_089d9afb96cc321ce8727712d28b901c = L.marker(
+                [41.9028, 12.4964],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_6e9bf4aefe9b637a9ba9249b3ea49ce8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_089d9afb96cc321ce8727712d28b901c.setIcon(icon_6e9bf4aefe9b637a9ba9249b3ea49ce8);
+        
+    
+        var popup_e545646bc30758cfbdedd51866d2c548 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_979638604af283c8700f55a7d223bd1a = $(`<div id="html_979638604af283c8700f55a7d223bd1a" style="width: 100.0%; height: 100.0%;">Destination: Rome&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 18.06692307692312°C&lt;br&gt;Humidity: 66.81065088757397%</div>`)[0];
+                popup_e545646bc30758cfbdedd51866d2c548.setContent(html_979638604af283c8700f55a7d223bd1a);
+            
+        
+
+        marker_089d9afb96cc321ce8727712d28b901c.bindPopup(popup_e545646bc30758cfbdedd51866d2c548)
+        ;
+
+        
+    
+    
+            var marker_d81c40b5f7606de1bb29303ff9e9b614 = L.marker(
+                [41.9028, 12.4964],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_c3f35f5cc9d12978accfb6ac9d0049eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d81c40b5f7606de1bb29303ff9e9b614.setIcon(icon_c3f35f5cc9d12978accfb6ac9d0049eb);
+        
+    
+        var popup_48ee85f3c2685ed648add583c065a9a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d87edfed1eb56eed907836b0d0a58bf4 = $(`<div id="html_d87edfed1eb56eed907836b0d0a58bf4" style="width: 100.0%; height: 100.0%;">Destination: Rome&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 21.502071005917188°C&lt;br&gt;Humidity: 62.73964497041421%</div>`)[0];
+                popup_48ee85f3c2685ed648add583c065a9a2.setContent(html_d87edfed1eb56eed907836b0d0a58bf4);
+            
+        
+
+        marker_d81c40b5f7606de1bb29303ff9e9b614.bindPopup(popup_48ee85f3c2685ed648add583c065a9a2)
+        ;
+
+        
+    
+    
+            var marker_fbd60a51e4c08943f824a78652ac7cec = L.marker(
+                [13.7563, 100.5018],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_c83c4a06f7e125dfc0eb286d8c5242a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fbd60a51e4c08943f824a78652ac7cec.setIcon(icon_c83c4a06f7e125dfc0eb286d8c5242a6);
+        
+    
+        var popup_0279cf2ad431d0b61943dc9773f5102b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f45a55e763f8ed6503b28d661e081ee = $(`<div id="html_6f45a55e763f8ed6503b28d661e081ee" style="width: 100.0%; height: 100.0%;">Destination: Bangkok&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 30.272366863905287°C&lt;br&gt;Humidity: 72.02366863905326%</div>`)[0];
+                popup_0279cf2ad431d0b61943dc9773f5102b.setContent(html_6f45a55e763f8ed6503b28d661e081ee);
+            
+        
+
+        marker_fbd60a51e4c08943f824a78652ac7cec.bindPopup(popup_0279cf2ad431d0b61943dc9773f5102b)
+        ;
+
+        
+    
+    
+            var marker_8ff49cb2e264b5412e99155842eb8d74 = L.marker(
+                [13.7563, 100.5018],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_7b9c56ed941e8a4317347a5957ad26fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8ff49cb2e264b5412e99155842eb8d74.setIcon(icon_7b9c56ed941e8a4317347a5957ad26fd);
+        
+    
+        var popup_f0312029c0b857c5933ac4f80d14e32e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ade99748e6fc6a527891b7ecd9cc982b = $(`<div id="html_ade99748e6fc6a527891b7ecd9cc982b" style="width: 100.0%; height: 100.0%;">Destination: Bangkok&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 30.272366863905287°C&lt;br&gt;Humidity: 72.02366863905326%</div>`)[0];
+                popup_f0312029c0b857c5933ac4f80d14e32e.setContent(html_ade99748e6fc6a527891b7ecd9cc982b);
+            
+        
+
+        marker_8ff49cb2e264b5412e99155842eb8d74.bindPopup(popup_f0312029c0b857c5933ac4f80d14e32e)
+        ;
+
+        
+    
+    
+            var marker_b828696cba147e431113fd14abc59710 = L.marker(
+                [13.7563, 100.5018],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_8a750e4ea036d741b1c75148d4742a29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b828696cba147e431113fd14abc59710.setIcon(icon_8a750e4ea036d741b1c75148d4742a29);
+        
+    
+        var popup_8780f227dd62c3d2c6fe991d2ff12f63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc560cba8cd1b33357e6b1657f1f97e7 = $(`<div id="html_dc560cba8cd1b33357e6b1657f1f97e7" style="width: 100.0%; height: 100.0%;">Destination: Bangkok&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 30.272366863905287°C&lt;br&gt;Humidity: 72.02366863905326%</div>`)[0];
+                popup_8780f227dd62c3d2c6fe991d2ff12f63.setContent(html_dc560cba8cd1b33357e6b1657f1f97e7);
+            
+        
+
+        marker_b828696cba147e431113fd14abc59710.bindPopup(popup_8780f227dd62c3d2c6fe991d2ff12f63)
+        ;
+
+        
+    
+    
+            var marker_3f839f9bb51d4df82b41dec17b3219f1 = L.marker(
+                [13.7563, 100.5018],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_b27fc8b38ce6221c5cfd0169e8384fec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3f839f9bb51d4df82b41dec17b3219f1.setIcon(icon_b27fc8b38ce6221c5cfd0169e8384fec);
+        
+    
+        var popup_7ee04924d1cf1b20e955f8a65ddafcc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14d787e971051ff89fe4beb12c6aae35 = $(`<div id="html_14d787e971051ff89fe4beb12c6aae35" style="width: 100.0%; height: 100.0%;">Destination: Bangkok&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 34.09727810650888°C&lt;br&gt;Humidity: 50.82248520710059%</div>`)[0];
+                popup_7ee04924d1cf1b20e955f8a65ddafcc2.setContent(html_14d787e971051ff89fe4beb12c6aae35);
+            
+        
+
+        marker_3f839f9bb51d4df82b41dec17b3219f1.bindPopup(popup_7ee04924d1cf1b20e955f8a65ddafcc2)
+        ;
+
+        
+    
+    
+            var marker_757855517d3b2cafbac0a904b1787971 = L.marker(
+                [13.7563, 100.5018],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_fbff308f9e1ec46a0e5c62e584e0a1fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_757855517d3b2cafbac0a904b1787971.setIcon(icon_fbff308f9e1ec46a0e5c62e584e0a1fc);
+        
+    
+        var popup_91e14c98d95c5546e8d4952201f7b948 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_191e19ce660001e6deffe0a7c7e4745e = $(`<div id="html_191e19ce660001e6deffe0a7c7e4745e" style="width: 100.0%; height: 100.0%;">Destination: Bangkok&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 34.09727810650888°C&lt;br&gt;Humidity: 50.82248520710059%</div>`)[0];
+                popup_91e14c98d95c5546e8d4952201f7b948.setContent(html_191e19ce660001e6deffe0a7c7e4745e);
+            
+        
+
+        marker_757855517d3b2cafbac0a904b1787971.bindPopup(popup_91e14c98d95c5546e8d4952201f7b948)
+        ;
+
+        
+    
+    
+            var marker_550800be55dcd6c737736b4ad43ecea7 = L.marker(
+                [13.7563, 100.5018],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_cf085630214d7073dd003073ae496004 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_550800be55dcd6c737736b4ad43ecea7.setIcon(icon_cf085630214d7073dd003073ae496004);
+        
+    
+        var popup_8350ad286f082fe6fdd32c2c78279ded = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72cb75d68e93e69cfdfe94a8efa6b27b = $(`<div id="html_72cb75d68e93e69cfdfe94a8efa6b27b" style="width: 100.0%; height: 100.0%;">Destination: Bangkok&lt;br&gt;Month: 2023-02&lt;br&gt;Temperature: 28.70218934911247°C&lt;br&gt;Humidity: 73.37278106508876%</div>`)[0];
+                popup_8350ad286f082fe6fdd32c2c78279ded.setContent(html_72cb75d68e93e69cfdfe94a8efa6b27b);
+            
+        
+
+        marker_550800be55dcd6c737736b4ad43ecea7.bindPopup(popup_8350ad286f082fe6fdd32c2c78279ded)
+        ;
+
+        
+    
+    
+            var marker_e83120082382eef61d3acae71ab74efd = L.marker(
+                [13.7563, 100.5018],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_320c24759f75fc918b7caef499a68c0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e83120082382eef61d3acae71ab74efd.setIcon(icon_320c24759f75fc918b7caef499a68c0f);
+        
+    
+        var popup_90a627097535959190fcd852bf31478f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a60d24eb9410516681bdd05791b1f1a = $(`<div id="html_2a60d24eb9410516681bdd05791b1f1a" style="width: 100.0%; height: 100.0%;">Destination: Bangkok&lt;br&gt;Month: 2023-02&lt;br&gt;Temperature: 28.70218934911247°C&lt;br&gt;Humidity: 73.37278106508876%</div>`)[0];
+                popup_90a627097535959190fcd852bf31478f.setContent(html_2a60d24eb9410516681bdd05791b1f1a);
+            
+        
+
+        marker_e83120082382eef61d3acae71ab74efd.bindPopup(popup_90a627097535959190fcd852bf31478f)
+        ;
+
+        
+    
+    
+            var marker_8261a102c18338bff94d1854ddf75b17 = L.marker(
+                [13.7563, 100.5018],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_2b4b036ee49174f4fa75cfc897fb8c7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8261a102c18338bff94d1854ddf75b17.setIcon(icon_2b4b036ee49174f4fa75cfc897fb8c7e);
+        
+    
+        var popup_efce6626814d73a26af8b936d64b556a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dcfe498bf3f683c3a8233e85d853fe6 = $(`<div id="html_7dcfe498bf3f683c3a8233e85d853fe6" style="width: 100.0%; height: 100.0%;">Destination: Bangkok&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 28.954319526627245°C&lt;br&gt;Humidity: 77.37869822485207%</div>`)[0];
+                popup_efce6626814d73a26af8b936d64b556a.setContent(html_7dcfe498bf3f683c3a8233e85d853fe6);
+            
+        
+
+        marker_8261a102c18338bff94d1854ddf75b17.bindPopup(popup_efce6626814d73a26af8b936d64b556a)
+        ;
+
+        
+    
+    
+            var marker_62ddc2bee827156390673de4efb94fa7 = L.marker(
+                [20.7961, -156.3319],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_2811b036ed16134217cab1e0d6439033 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_62ddc2bee827156390673de4efb94fa7.setIcon(icon_2811b036ed16134217cab1e0d6439033);
+        
+    
+        var popup_b92871f27f8d88c4b086de0efc4f417f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77b3353759ef344aa2743bda5f9e9eb6 = $(`<div id="html_77b3353759ef344aa2743bda5f9e9eb6" style="width: 100.0%; height: 100.0%;">Destination: Hawaii&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 22.513786982248543°C&lt;br&gt;Humidity: 74.12426035502959%</div>`)[0];
+                popup_b92871f27f8d88c4b086de0efc4f417f.setContent(html_77b3353759ef344aa2743bda5f9e9eb6);
+            
+        
+
+        marker_62ddc2bee827156390673de4efb94fa7.bindPopup(popup_b92871f27f8d88c4b086de0efc4f417f)
+        ;
+
+        
+    
+    
+            var marker_c3609f2b833b32ad3cebb5b6a4b24e44 = L.marker(
+                [36.2048, 138.2529],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_27255c443b6ebe1a81f0268e21228b55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c3609f2b833b32ad3cebb5b6a4b24e44.setIcon(icon_27255c443b6ebe1a81f0268e21228b55);
+        
+    
+        var popup_042fb17bd7c6a4f06c546503371989aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03bb12256a60441196e5bea92f5b255b = $(`<div id="html_03bb12256a60441196e5bea92f5b255b" style="width: 100.0%; height: 100.0%;">Destination: Japan&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 12.528343195266295°C&lt;br&gt;Humidity: 65.21301775147928%</div>`)[0];
+                popup_042fb17bd7c6a4f06c546503371989aa.setContent(html_03bb12256a60441196e5bea92f5b255b);
+            
+        
+
+        marker_c3609f2b833b32ad3cebb5b6a4b24e44.bindPopup(popup_042fb17bd7c6a4f06c546503371989aa)
+        ;
+
+        
+    
+    
+            var marker_960c21eeefe041bd5590344a19ece545 = L.marker(
+                [15.87, 100.9925],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_0d5c9e6734b7b22e90023e73e785b9b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_960c21eeefe041bd5590344a19ece545.setIcon(icon_0d5c9e6734b7b22e90023e73e785b9b5);
+        
+    
+        var popup_c30257d227fb7c40838a0cb45293dbd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78fd25c12064bd315a5ddb9e5d061c03 = $(`<div id="html_78fd25c12064bd315a5ddb9e5d061c03" style="width: 100.0%; height: 100.0%;">Destination: Thailand&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 30.62041420118345°C&lt;br&gt;Humidity: 60.98224852071006%</div>`)[0];
+                popup_c30257d227fb7c40838a0cb45293dbd8.setContent(html_78fd25c12064bd315a5ddb9e5d061c03);
+            
+        
+
+        marker_960c21eeefe041bd5590344a19ece545.bindPopup(popup_c30257d227fb7c40838a0cb45293dbd8)
+        ;
+
+        
+    
+    
+            var marker_a2382500454180be29d72bccc834cdf4 = L.marker(
+                [46.6031, 1.8883],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_5848fb45f9af7bbcedbbe17d2ee344a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a2382500454180be29d72bccc834cdf4.setIcon(icon_5848fb45f9af7bbcedbbe17d2ee344a6);
+        
+    
+        var popup_c7500a84ab3bc4e157f7ca8bdc9c9957 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0f3597b99e065317fc4605fd362ef42 = $(`<div id="html_e0f3597b99e065317fc4605fd362ef42" style="width: 100.0%; height: 100.0%;">Destination: France&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 19.771597633136043°C&lt;br&gt;Humidity: 71.30177514792899%</div>`)[0];
+                popup_c7500a84ab3bc4e157f7ca8bdc9c9957.setContent(html_e0f3597b99e065317fc4605fd362ef42);
+            
+        
+
+        marker_a2382500454180be29d72bccc834cdf4.bindPopup(popup_c7500a84ab3bc4e157f7ca8bdc9c9957)
+        ;
+
+        
+    
+    
+            var marker_116c054ddd248d6f2acd4740f732b0b0 = L.marker(
+                [-25.2744, 133.7751],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_40a92fde3c90f81375e18b228194c242 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_116c054ddd248d6f2acd4740f732b0b0.setIcon(icon_40a92fde3c90f81375e18b228194c242);
+        
+    
+        var popup_4494dcf1be9643d9f9f4c90037670066 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3e9b5e59f79629730835933ade288ab = $(`<div id="html_d3e9b5e59f79629730835933ade288ab" style="width: 100.0%; height: 100.0%;">Destination: Australia&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 17.65769230769233°C&lt;br&gt;Humidity: 38.48520710059172%</div>`)[0];
+                popup_4494dcf1be9643d9f9f4c90037670066.setContent(html_d3e9b5e59f79629730835933ade288ab);
+            
+        
+
+        marker_116c054ddd248d6f2acd4740f732b0b0.bindPopup(popup_4494dcf1be9643d9f9f4c90037670066)
+        ;
+
+        
+    
+    
+            var marker_ba7440bedeba3887e480a121453e96b0 = L.marker(
+                [-14.235, -51.9253],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_591c0939c18704faa7001a9c0b796081 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba7440bedeba3887e480a121453e96b0.setIcon(icon_591c0939c18704faa7001a9c0b796081);
+        
+    
+        var popup_dc0c5d02fe11ea664dbb0e595838766e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7da3128b752425dca317bc6dc0e32cb = $(`<div id="html_c7da3128b752425dca317bc6dc0e32cb" style="width: 100.0%; height: 100.0%;">Destination: Brazil&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 29.962544378698272°C&lt;br&gt;Humidity: 44.47337278106509%</div>`)[0];
+                popup_dc0c5d02fe11ea664dbb0e595838766e.setContent(html_c7da3128b752425dca317bc6dc0e32cb);
+            
+        
+
+        marker_ba7440bedeba3887e480a121453e96b0.bindPopup(popup_dc0c5d02fe11ea664dbb0e595838766e)
+        ;
+
+        
+    
+    
+            var marker_8fa6b930c950e190d5d20a0572bd57a9 = L.marker(
+                [39.0742, 21.8243],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_bb75d75280b8cdb84a52c7ec5590ac58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8fa6b930c950e190d5d20a0572bd57a9.setIcon(icon_bb75d75280b8cdb84a52c7ec5590ac58);
+        
+    
+        var popup_c4c7ba648b07b677340ff48a9cff47c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3a76250be3f80d1ba3bcb71fd2bd6f9 = $(`<div id="html_c3a76250be3f80d1ba3bcb71fd2bd6f9" style="width: 100.0%; height: 100.0%;">Destination: Greece&lt;br&gt;Month: 2023-10&lt;br&gt;Temperature: 16.18313609467458°C&lt;br&gt;Humidity: 67.02366863905326%</div>`)[0];
+                popup_c4c7ba648b07b677340ff48a9cff47c8.setContent(html_c3a76250be3f80d1ba3bcb71fd2bd6f9);
+            
+        
+
+        marker_8fa6b930c950e190d5d20a0572bd57a9.bindPopup(popup_c4c7ba648b07b677340ff48a9cff47c8)
+        ;
+
+        
+    
+    
+            var marker_8b18f43704dae5adadf54d1c44197c7b = L.marker(
+                [26.8206, 30.8025],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_de20de022b0318c6d4fce64bb19b7a93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b18f43704dae5adadf54d1c44197c7b.setIcon(icon_de20de022b0318c6d4fce64bb19b7a93);
+        
+    
+        var popup_4b5c1e2b105912fa80040c6535b79ce6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4c94ea57fbda7dcf808402181927903 = $(`<div id="html_e4c94ea57fbda7dcf808402181927903" style="width: 100.0%; height: 100.0%;">Destination: Egypt&lt;br&gt;Month: 2023-11&lt;br&gt;Temperature: 25.116331360946766°C&lt;br&gt;Humidity: 32.11834319526627%</div>`)[0];
+                popup_4b5c1e2b105912fa80040c6535b79ce6.setContent(html_e4c94ea57fbda7dcf808402181927903);
+            
+        
+
+        marker_8b18f43704dae5adadf54d1c44197c7b.bindPopup(popup_4b5c1e2b105912fa80040c6535b79ce6)
+        ;
+
+        
+    
+    
+            var marker_f5d926c0a251fe659f3edb1aaba0a89e = L.marker(
+                [23.6345, -102.5528],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_e99ebc7dda5183dcd71bd44b269db983 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f5d926c0a251fe659f3edb1aaba0a89e.setIcon(icon_e99ebc7dda5183dcd71bd44b269db983);
+        
+    
+        var popup_1d635b999e5294b8fe646f7add0ad728 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ad24962492a4e78d4a34079f330466b = $(`<div id="html_3ad24962492a4e78d4a34079f330466b" style="width: 100.0%; height: 100.0%;">Destination: Mexico&lt;br&gt;Month: 2023-01&lt;br&gt;Temperature: 13.3485207100592°C&lt;br&gt;Humidity: 37.86390532544379%</div>`)[0];
+                popup_1d635b999e5294b8fe646f7add0ad728.setContent(html_3ad24962492a4e78d4a34079f330466b);
+            
+        
+
+        marker_f5d926c0a251fe659f3edb1aaba0a89e.bindPopup(popup_1d635b999e5294b8fe646f7add0ad728)
+        ;
+
+        
+    
+    
+            var marker_4ff88d44bba4438a1e8de8a4b9d69c5a = L.marker(
+                [41.8719, 12.5675],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_888a1b5964115f160a2f6a660cfa41d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4ff88d44bba4438a1e8de8a4b9d69c5a.setIcon(icon_888a1b5964115f160a2f6a660cfa41d0);
+        
+    
+        var popup_956a9ea1b45255b800bfadf77af60095 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f981f81b108f9bf10c00f4651694a47 = $(`<div id="html_5f981f81b108f9bf10c00f4651694a47" style="width: 100.0%; height: 100.0%;">Destination: Italy&lt;br&gt;Month: 2023-02&lt;br&gt;Temperature: 7.494792899408313°C&lt;br&gt;Humidity: 60.0414201183432%</div>`)[0];
+                popup_956a9ea1b45255b800bfadf77af60095.setContent(html_5f981f81b108f9bf10c00f4651694a47);
+            
+        
+
+        marker_4ff88d44bba4438a1e8de8a4b9d69c5a.bindPopup(popup_956a9ea1b45255b800bfadf77af60095)
+        ;
+
+        
+    
+    
+            var marker_3b1a6e02ddcd363b25426a7ee79d4034 = L.marker(
+                [40.4637, -3.7492],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_e225de9fca1ed465aebe2fa58a86c72c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3b1a6e02ddcd363b25426a7ee79d4034.setIcon(icon_e225de9fca1ed465aebe2fa58a86c72c);
+        
+    
+        var popup_04b5580aefe1d596bc10345b2ea816bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_376db5e74390e9860b462cd765ee2454 = $(`<div id="html_376db5e74390e9860b462cd765ee2454" style="width: 100.0%; height: 100.0%;">Destination: Spain&lt;br&gt;Month: 2023-03&lt;br&gt;Temperature: 6.317396449704167°C&lt;br&gt;Humidity: 65.15976331360947%</div>`)[0];
+                popup_04b5580aefe1d596bc10345b2ea816bb.setContent(html_376db5e74390e9860b462cd765ee2454);
+            
+        
+
+        marker_3b1a6e02ddcd363b25426a7ee79d4034.bindPopup(popup_04b5580aefe1d596bc10345b2ea816bb)
+        ;
+
+        
+    
+    
+            var marker_702a6dfe23ad9c48e6780b64851d4062 = L.marker(
+                [56.1304, -106.3468],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_3f119cd5b6176c9c10e964c702e6cfac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_702a6dfe23ad9c48e6780b64851d4062.setIcon(icon_3f119cd5b6176c9c10e964c702e6cfac);
+        
+    
+        var popup_2c68c07737fe78da3ebe3b7de6eb69c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e8d22f1516c56ed134a195b3054592f = $(`<div id="html_0e8d22f1516c56ed134a195b3054592f" style="width: 100.0%; height: 100.0%;">Destination: Canada&lt;br&gt;Month: 2023-04&lt;br&gt;Temperature: -7.051301775147903°C&lt;br&gt;Humidity: 93.63905325443788%</div>`)[0];
+                popup_2c68c07737fe78da3ebe3b7de6eb69c7.setContent(html_0e8d22f1516c56ed134a195b3054592f);
+            
+        
+
+        marker_702a6dfe23ad9c48e6780b64851d4062.bindPopup(popup_2c68c07737fe78da3ebe3b7de6eb69c7)
+        ;
+
+        
+    
+    
+            var marker_68ef90b62d7b526599c6eb355f66e6b1 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_1285f21d7757d0ab73a9fa664295af4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_68ef90b62d7b526599c6eb355f66e6b1.setIcon(icon_1285f21d7757d0ab73a9fa664295af4a);
+        
+    
+        var popup_4fa2da343ee359346ec330323d5c2778 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7e4f3e4b8b802f0f50eae61f66ea8eb = $(`<div id="html_b7e4f3e4b8b802f0f50eae61f66ea8eb" style="width: 100.0%; height: 100.0%;">Destination: New York City&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 25.638284023668643°C&lt;br&gt;Humidity: 63.56804733727811%</div>`)[0];
+                popup_4fa2da343ee359346ec330323d5c2778.setContent(html_b7e4f3e4b8b802f0f50eae61f66ea8eb);
+            
+        
+
+        marker_68ef90b62d7b526599c6eb355f66e6b1.bindPopup(popup_4fa2da343ee359346ec330323d5c2778)
+        ;
+
+        
+    
+    
+            var marker_425ad62603802c7fdbae974322f9661c = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_34a96bf13d79792b3689cde5674d983b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_425ad62603802c7fdbae974322f9661c.setIcon(icon_34a96bf13d79792b3689cde5674d983b);
+        
+    
+        var popup_30a4d1ef550eeef695ee0b38e1662099 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3743ac6983837af21a69b0a5ad9414c2 = $(`<div id="html_3743ac6983837af21a69b0a5ad9414c2" style="width: 100.0%; height: 100.0%;">Destination: New York City&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 25.91420118343198°C&lt;br&gt;Humidity: 74.88165680473372%</div>`)[0];
+                popup_30a4d1ef550eeef695ee0b38e1662099.setContent(html_3743ac6983837af21a69b0a5ad9414c2);
+            
+        
+
+        marker_425ad62603802c7fdbae974322f9661c.bindPopup(popup_30a4d1ef550eeef695ee0b38e1662099)
+        ;
+
+        
+    
+    
+            var marker_51e47a5554c3bc1e3f5d8ec4349c0903 = L.marker(
+                [49.2827, -123.1207],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_f26cbe9cbc5d9d8cc84309ec1ffa2016 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_51e47a5554c3bc1e3f5d8ec4349c0903.setIcon(icon_f26cbe9cbc5d9d8cc84309ec1ffa2016);
+        
+    
+        var popup_d2e0556445d604b6164ae79f4cd152ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0901b92423bfd8c892b8ef1eedaf342 = $(`<div id="html_a0901b92423bfd8c892b8ef1eedaf342" style="width: 100.0%; height: 100.0%;">Destination: Vancouver&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 20.75301775147932°C&lt;br&gt;Humidity: 61.96449704142012%</div>`)[0];
+                popup_d2e0556445d604b6164ae79f4cd152ed.setContent(html_a0901b92423bfd8c892b8ef1eedaf342);
+            
+        
+
+        marker_51e47a5554c3bc1e3f5d8ec4349c0903.bindPopup(popup_d2e0556445d604b6164ae79f4cd152ed)
+        ;
+
+        
+    
+    
+            var marker_c9c6027b2c48d6d520ccaee973bd7318 = L.marker(
+                [49.2827, -123.1207],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_b2e320fcd7442ab26917c47d9dac30a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c9c6027b2c48d6d520ccaee973bd7318.setIcon(icon_b2e320fcd7442ab26917c47d9dac30a5);
+        
+    
+        var popup_fe6f650ccc9148772bf7718a057e2850 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e57491387ba1059dcef9ef6f5a36709 = $(`<div id="html_2e57491387ba1059dcef9ef6f5a36709" style="width: 100.0%; height: 100.0%;">Destination: Vancouver&lt;br&gt;Month: 2023-08&lt;br&gt;Temperature: 20.501597633136114°C&lt;br&gt;Humidity: 70.65680473372781%</div>`)[0];
+                popup_fe6f650ccc9148772bf7718a057e2850.setContent(html_2e57491387ba1059dcef9ef6f5a36709);
+            
+        
+
+        marker_c9c6027b2c48d6d520ccaee973bd7318.bindPopup(popup_fe6f650ccc9148772bf7718a057e2850)
+        ;
+
+        
+    
+    
+            var marker_d1d1691507ef8b6441b76d9ed66a7051 = L.marker(
+                [37.5665, 126.978],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_791aed56a02588ed9be212a9a344cad0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d1d1691507ef8b6441b76d9ed66a7051.setIcon(icon_791aed56a02588ed9be212a9a344cad0);
+        
+    
+        var popup_3173236e9f7918efc8bd6621dae7e781 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_616745334f830a7da04afdd744e7d695 = $(`<div id="html_616745334f830a7da04afdd744e7d695" style="width: 100.0%; height: 100.0%;">Destination: Seoul&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 16.376568047337273°C&lt;br&gt;Humidity: 53.13609467455621%</div>`)[0];
+                popup_3173236e9f7918efc8bd6621dae7e781.setContent(html_616745334f830a7da04afdd744e7d695);
+            
+        
+
+        marker_d1d1691507ef8b6441b76d9ed66a7051.bindPopup(popup_3173236e9f7918efc8bd6621dae7e781)
+        ;
+
+        
+    
+    
+            var marker_98293bd25442377849e6179cd3ccf731 = L.marker(
+                [37.5665, 126.978],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_26afeb156ffa900b4a27b89ee2352940 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_98293bd25442377849e6179cd3ccf731.setIcon(icon_26afeb156ffa900b4a27b89ee2352940);
+        
+    
+        var popup_f5aed8f27353fd87a33653a4a8ad974b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b787d5feb0cfb52050e81aa719b4cdb3 = $(`<div id="html_b787d5feb0cfb52050e81aa719b4cdb3" style="width: 100.0%; height: 100.0%;">Destination: Seoul&lt;br&gt;Month: 2023-05&lt;br&gt;Temperature: 16.376568047337273°C&lt;br&gt;Humidity: 53.13609467455621%</div>`)[0];
+                popup_f5aed8f27353fd87a33653a4a8ad974b.setContent(html_b787d5feb0cfb52050e81aa719b4cdb3);
+            
+        
+
+        marker_98293bd25442377849e6179cd3ccf731.bindPopup(popup_f5aed8f27353fd87a33653a4a8ad974b)
+        ;
+
+        
+    
+    
+            var marker_260d0e408d57f48b4494f34b3c41e3cf = L.marker(
+                [34.0522, -118.2437],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_551063f83eb72e5f4b0ff60f430c7c34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_260d0e408d57f48b4494f34b3c41e3cf.setIcon(icon_551063f83eb72e5f4b0ff60f430c7c34);
+        
+    
+        var popup_03cb8867bf7fe2966ca7427938c592f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05ba87c0114c83e0c170941a7c16bd5e = $(`<div id="html_05ba87c0114c83e0c170941a7c16bd5e" style="width: 100.0%; height: 100.0%;">Destination: Los Angeles&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 17.07431952662724°C&lt;br&gt;Humidity: 75.62721893491124%</div>`)[0];
+                popup_03cb8867bf7fe2966ca7427938c592f2.setContent(html_05ba87c0114c83e0c170941a7c16bd5e);
+            
+        
+
+        marker_260d0e408d57f48b4494f34b3c41e3cf.bindPopup(popup_03cb8867bf7fe2966ca7427938c592f2)
+        ;
+
+        
+    
+    
+            var marker_a48336819d65ef801ed4877eaa4e3e70 = L.marker(
+                [-33.918861, 18.4233],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_5205ab5b3fa765136c6e2e54bf982cf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a48336819d65ef801ed4877eaa4e3e70.setIcon(icon_5205ab5b3fa765136c6e2e54bf982cf2);
+        
+    
+        var popup_109c9a34a3b5d6deedd80ca3e57b1513 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a991af943e4b32afdbef05b992d8cf8 = $(`<div id="html_5a991af943e4b32afdbef05b992d8cf8" style="width: 100.0%; height: 100.0%;">Destination: Cape Town&lt;br&gt;Month: 2023-01&lt;br&gt;Temperature: 20.782840236686408°C&lt;br&gt;Humidity: 66.18343195266272%</div>`)[0];
+                popup_109c9a34a3b5d6deedd80ca3e57b1513.setContent(html_5a991af943e4b32afdbef05b992d8cf8);
+            
+        
+
+        marker_a48336819d65ef801ed4877eaa4e3e70.bindPopup(popup_109c9a34a3b5d6deedd80ca3e57b1513)
+        ;
+
+        
+    
+    
+            var marker_479cb690cfb2947e9a5c9122687ad531 = L.marker(
+                [-33.918861, 18.4233],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_9f88a20ca7e6607f67094d60f9c1b38c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_479cb690cfb2947e9a5c9122687ad531.setIcon(icon_9f88a20ca7e6607f67094d60f9c1b38c);
+        
+    
+        var popup_ef584e19b3d3c89318a866820f5898c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13e5b8b3c4b7aec9dde4376e968a0606 = $(`<div id="html_13e5b8b3c4b7aec9dde4376e968a0606" style="width: 100.0%; height: 100.0%;">Destination: Cape Town&lt;br&gt;Month: 2023-01&lt;br&gt;Temperature: 20.782840236686408°C&lt;br&gt;Humidity: 66.18343195266272%</div>`)[0];
+                popup_ef584e19b3d3c89318a866820f5898c1.setContent(html_13e5b8b3c4b7aec9dde4376e968a0606);
+            
+        
+
+        marker_479cb690cfb2947e9a5c9122687ad531.bindPopup(popup_ef584e19b3d3c89318a866820f5898c1)
+        ;
+
+        
+    
+    
+            var marker_0f0bc95bf98279f8e1eb05406eddf42a = L.marker(
+                [-33.918861, 18.4233],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_d179eddff2550ddf556affa5f2a28627 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f0bc95bf98279f8e1eb05406eddf42a.setIcon(icon_d179eddff2550ddf556affa5f2a28627);
+        
+    
+        var popup_797a310e84d3f040020b322352b76d1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_219aa4c162f27a5e1219f51017541002 = $(`<div id="html_219aa4c162f27a5e1219f51017541002" style="width: 100.0%; height: 100.0%;">Destination: Cape Town&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 12.54355029585802°C&lt;br&gt;Humidity: 68.96449704142012%</div>`)[0];
+                popup_797a310e84d3f040020b322352b76d1a.setContent(html_219aa4c162f27a5e1219f51017541002);
+            
+        
+
+        marker_0f0bc95bf98279f8e1eb05406eddf42a.bindPopup(popup_797a310e84d3f040020b322352b76d1a)
+        ;
+
+        
+    
+    
+            var marker_4300a254786095dd24aed4be97d7dc85 = L.marker(
+                [-33.918861, 18.4233],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_a26f57e1148e5a6faaedcbf3bd5d9b9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4300a254786095dd24aed4be97d7dc85.setIcon(icon_a26f57e1148e5a6faaedcbf3bd5d9b9b);
+        
+    
+        var popup_378c58c6cb91b60881aa5f5eedd8cf81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a32ed960a0dc15f5150ae66189a6957c = $(`<div id="html_a32ed960a0dc15f5150ae66189a6957c" style="width: 100.0%; height: 100.0%;">Destination: Cape Town&lt;br&gt;Month: 2023-06&lt;br&gt;Temperature: 13.58449704142014°C&lt;br&gt;Humidity: 76.76331360946746%</div>`)[0];
+                popup_378c58c6cb91b60881aa5f5eedd8cf81.setContent(html_a32ed960a0dc15f5150ae66189a6957c);
+            
+        
+
+        marker_4300a254786095dd24aed4be97d7dc85.bindPopup(popup_378c58c6cb91b60881aa5f5eedd8cf81)
+        ;
+
+        
+    
+    
+            var marker_decddfdb44562ef0f31d285f1f3a98ee = L.marker(
+                [36.3932, 25.4615],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_afb88677dedadbf469512fc4150e0d2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_decddfdb44562ef0f31d285f1f3a98ee.setIcon(icon_afb88677dedadbf469512fc4150e0d2b);
+        
+    
+        var popup_80f2dffe91839bcb680d1e4b77f91f54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4474e81be2122dce3312de7e40066383 = $(`<div id="html_4474e81be2122dce3312de7e40066383" style="width: 100.0%; height: 100.0%;">Destination: Santorini&lt;br&gt;Month: 2023-07&lt;br&gt;Temperature: 25.993017751479293°C&lt;br&gt;Humidity: 59.31952662721893%</div>`)[0];
+                popup_80f2dffe91839bcb680d1e4b77f91f54.setContent(html_4474e81be2122dce3312de7e40066383);
+            
+        
+
+        marker_decddfdb44562ef0f31d285f1f3a98ee.bindPopup(popup_80f2dffe91839bcb680d1e4b77f91f54)
+        ;
+
+        
+    
+    
+            var marker_ad01830030c164238cfd39fe9b98ecf4 = L.marker(
+                [11.5564, 104.9282],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_b01aaa91e3c9a254617e4e499072edae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad01830030c164238cfd39fe9b98ecf4.setIcon(icon_b01aaa91e3c9a254617e4e499072edae);
+        
+    
+        var popup_3e1ddd45a0e421c471f38a6dca749d7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5bb79e3b49c1f91f78d823901da100a = $(`<div id="html_d5bb79e3b49c1f91f78d823901da100a" style="width: 100.0%; height: 100.0%;">Destination: Phnom Penh&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 28.98041420118335°C&lt;br&gt;Humidity: 82.36094674556213%</div>`)[0];
+                popup_3e1ddd45a0e421c471f38a6dca749d7f.setContent(html_d5bb79e3b49c1f91f78d823901da100a);
+            
+        
+
+        marker_ad01830030c164238cfd39fe9b98ecf4.bindPopup(popup_3e1ddd45a0e421c471f38a6dca749d7f)
+        ;
+
+        
+    
+    
+            var marker_60a727787036c4fc6d7eee10a89913bd = L.marker(
+                [37.9838, 23.7275],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_0601b95f9b58170bc19f7d1d214e384b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_60a727787036c4fc6d7eee10a89913bd.setIcon(icon_0601b95f9b58170bc19f7d1d214e384b);
+        
+    
+        var popup_da171e769835e123c16fa3f8767b1b1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64f813cf09af073d88028d469211a279 = $(`<div id="html_64f813cf09af073d88028d469211a279" style="width: 100.0%; height: 100.0%;">Destination: Athens&lt;br&gt;Month: 2023-09&lt;br&gt;Temperature: 25.1986982248521°C&lt;br&gt;Humidity: 62.2603550295858%</div>`)[0];
+                popup_da171e769835e123c16fa3f8767b1b1b.setContent(html_64f813cf09af073d88028d469211a279);
+            
+        
+
+        marker_60a727787036c4fc6d7eee10a89913bd.bindPopup(popup_da171e769835e123c16fa3f8767b1b1b)
+        ;
+
+        
+    
+    
+            var marker_e01a8ed81aad7453a365173904becaa4 = L.marker(
+                [-36.8485, 174.7633],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_e1ccd3be91e7e28cdd8cf2bf213d2081 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e01a8ed81aad7453a365173904becaa4.setIcon(icon_e1ccd3be91e7e28cdd8cf2bf213d2081);
+        
+    
+        var popup_8cad90cc6f00591491933e27f03fb14a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8fbc6169ef9bd915a3941d877b55a70 = $(`<div id="html_f8fbc6169ef9bd915a3941d877b55a70" style="width: 100.0%; height: 100.0%;">Destination: Auckland&lt;br&gt;Month: 2023-10&lt;br&gt;Temperature: 13.389467455621316°C&lt;br&gt;Humidity: 71.36094674556213%</div>`)[0];
+                popup_8cad90cc6f00591491933e27f03fb14a.setContent(html_f8fbc6169ef9bd915a3941d877b55a70);
+            
+        
+
+        marker_e01a8ed81aad7453a365173904becaa4.bindPopup(popup_8cad90cc6f00591491933e27f03fb14a)
+        ;
+
+        
+    
+    
+            var marker_3141e323b5a3244e8a6c40a24824b20c = L.marker(
+                [11.0168, 76.9558],
+                {}
+            ).addTo(marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833);
+        
+    
+            var icon_e0b369c10f5282ef1fbe4d20d95c5c66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3141e323b5a3244e8a6c40a24824b20c.setIcon(icon_e0b369c10f5282ef1fbe4d20d95c5c66);
+        
+    
+        var popup_3e634fd94f428f8ec8f9353abbf3ccdd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff8e5f98e9ffb3b744b18835c046cefa = $(`<div id="html_ff8e5f98e9ffb3b744b18835c046cefa" style="width: 100.0%; height: 100.0%;">Destination: Coimbatore&lt;br&gt;Month: 2023-01&lt;br&gt;Temperature: 24.85213017751487°C&lt;br&gt;Humidity: 62.75739644970414%</div>`)[0];
+                popup_3e634fd94f428f8ec8f9353abbf3ccdd.setContent(html_ff8e5f98e9ffb3b744b18835c046cefa);
+            
+        
+
+        marker_3141e323b5a3244e8a6c40a24824b20c.bindPopup(popup_3e634fd94f428f8ec8f9353abbf3ccdd)
+        ;
+
+        
+    
+    
+            marker_cluster_0c3e64ecf8ca97c27ff13e1c82592833.addTo(map_132a66de0580216ed722e29b6a4d6610);
+        
+</script>
+</html>
